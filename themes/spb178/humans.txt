@@ -1,0 +1,22 @@
+/* TEAM */
+  Chief:Mariya Kolotyrina
+  Contact: hello [at] 178spb.com
+  From:Russia, Saint Petersburg
+
+  Web developer: Natalya Ignatova
+  Telegram: @IgnatovaNataliya
+  From:Russia, Saint Petersburg
+
+  Web developer, Web Designer, SEO: Sergey Korneev
+  Telegram: @mirrorinblack
+  From:Russia, Saint Petersburg
+
+  IT: Vladimir Neudachin
+  Telegram: @VimpelIT
+  From:Russia, Saint Petersburg
+
+/* SITE */
+	Last update:2020/03/03
+	Language: Russian
+	Doctype: HTML5
+	IDE: Visual Studio Code, Google Chrome, Figma

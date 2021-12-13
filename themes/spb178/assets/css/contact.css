@@ -1,0 +1,529 @@
+#insta {
+    background: -o-radial-gradient(30% 107%, circle, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.mr-20 {
+    margin-right: 20px
+}
+
+.fa-angle-down {
+    font-size: 1.7vh;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.container {
+    padding: 0;
+    height: 100vh
+}
+
+/*.container a, .container li, .container p {*/
+/*    color: #e5e5e5;*/
+/*    font-size: 1.7vh*/
+/*}*/
+
+.container .submenu {
+    background: 0 0
+}
+
+.container .header_nav {
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    background: 0 0
+}
+
+ul {
+    /*list-style: none;*/
+    margin: 0;
+    padding: 0
+}
+
+.main {
+    position: absolute;
+    /*left: 5vw;*/
+    bottom: 0
+}
+
+b {
+    font-weight: bolder;
+}
+
+.main ul {
+    margin: 50px 0 15px
+}
+
+.main ul li {
+    display: block;
+    font-size: 1.146em
+}
+
+.main-footer {
+    margin: 50px 0 15px;
+}
+
+.main a, .main p {
+    /*color: #000*/
+}
+
+/*.offer b, .offer a, .offer p {*/
+/*    color: #000000;*/
+/*}*/
+
+button p {
+    color: #000000;
+}
+
+#main-logo img {
+    width: 17vw
+}
+
+.offer {
+    /*margin-top: 50px;*/
+    /*color: #000000;*/
+}
+
+.offer p {
+    line-height: 1.5;
+    margin: 0;
+    /*color: #000000;*/
+}
+
+.offer p:not(:last-child) {
+    padding-top: 5px
+}
+
+.offer p a:hover {
+    font-weight: 800;
+    -webkit-transition: .4s all;
+    -o-transition: .4s all;
+    transition: .4s all
+}
+
+#btn {
+    display: inline-block;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    font-size: 1.146em;
+    font-weight: 900;
+    color: #000;
+    background: 0 0;
+    margin-top: 50px;
+    padding: 10px
+}
+
+#btn p {
+    margin: 0
+}
+
+#btn::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f88f3b;
+    -webkit-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: rotateX(-85deg);
+    transform: rotateX(-85deg);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    -o-transition: transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    will-change: transform
+}
+
+#btn:hover::before {
+    -webkit-box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0)
+}
+
+#trailer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(/wp-content/themes/spb178/images/contactBack.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+#trailer #polyfil {
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    margin-left: -4%
+}
+
+#uslugi .fa-angle-down {
+    margin-left: 0;
+    margin-top: 0
+}
+
+.contact-map {
+    position: absolute;
+    margin: 10px;
+    bottom: 0;
+    right: 0;
+    width: 25vw;
+    height: 50vh
+}
+
+
+#ya-map {
+    /*max-width: 533px;*/
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.icon-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-list-item {
+    display: flex!important;
+    flex-direction: row;
+}
+
+.contacts__offer .contacts-address__link {
+    color: #000000;
+    font-size: 16px;
+}
+
+.contacts__data .contacts-address-tel__link, .contacts-address-mail__link {
+    color: #000000;
+}
+
+.contacts__data {
+    color: #000000;
+}
+
+.contacts__btn .contacts__btn-name {
+    color: #000000;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1366px) and (orientation: landscape) {
+    #main-logo img {
+        width: 22vw
+    }
+
+    .main {
+        /*left: 3.3vw*/
+    }
+
+    .main ul {
+        margin: 30px 0 15px
+    }
+
+    .offer {
+        margin-top: 30px
+    }
+
+    #btn {
+        margin-top: 30px
+    }
+}
+
+@media (max-width: 1280px) {
+    .main {
+        /*left: 3.3vw*/
+    }
+
+    .main p {
+        font-size: 16px
+    }
+
+    .main p b {
+        font-size: 16px;
+    }
+
+    .main a {
+        font-size: 16px;
+    }
+
+    .main ul {
+        margin: 25px 0 15px
+    }
+
+    .main #btn {
+        margin-top: 25px
+    }
+
+    .offer {
+        margin-top: 25px
+    }
+
+    #main-logo img {
+        width: 22vw
+    }
+
+    .contact-map {
+        width: 30vw
+    }
+
+    .fa {
+        font-size: 25px
+    }
+}
+
+@media (max-width: 1024px) {
+    #subway {
+        display: none
+    }
+
+    .main {
+        /*left: 3.3vw*/
+    }
+
+    .main p {
+        font-size: 14px
+    }
+
+    .main p b {
+        font-size: 14px;
+    }
+
+    .main a {
+        font-size: 14px;
+    }
+
+    .contact-map {
+        height: 46vh
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    a {
+        font-size: 16px;
+    }
+
+    .main p {
+        font-size: 16px
+    }
+
+    .main a {
+        /*font-size: 16px !important*/
+    }
+
+    .contact-map {
+        height: 44vh
+    }
+
+    #main-logo img {
+        width: 22vh
+    }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+    #uslugi .fa-angle-down {
+        font-size: 14px
+    }
+
+    .container .submenu {
+        background: #000;
+        left: -6.5vw
+    }
+
+    .container .header_nav {
+        top: 10px;
+        right: 20px
+    }
+
+    /*.container .header_nav ul .submenu {*/
+    /*    padding: 0 10px*/
+    /*}*/
+
+    .main p {
+        font-size: 12px
+    }
+
+    .main p:last-child {
+        padding: 5px 0 0 5px
+    }
+
+    .main a {
+        /*font-size: 12px;*/
+    }
+
+    .main ul {
+        margin: 10px 0 5px;
+        font-size: 10px
+    }
+
+    .main .offer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 260px;
+        /*margin-top: 0*/
+    }
+
+    .main .offer p:nth-child(2) a:last-child {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: 65px
+    }
+
+    .main #btn {
+        margin-top: 10px;
+        padding: 5px
+    }
+
+    .main #btn p {
+        padding: 0
+    }
+
+    .contact-map {
+        bottom: 0;
+        right: 0;
+        height: 50vh
+    }
+}
+
+@media screen and (max-width: 736px) and (orientation: landscape) {
+    .container .submenu {
+        left: -4vw
+    }
+}
+
+@media screen and (max-width: 414px) and (orientation: portrait) {
+    .container .fa-angle-down, .container a, .container b, .container p {
+        font-size: 1.9vh;
+    }
+
+    .container .header_nav {
+        width: 100%;
+        margin-top: 0;
+        /*padding-right: 3vw;*/
+        right: 0;
+        z-index: 1
+    }
+
+    .container .header_nav .menu {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .container .header_nav ul a {
+        text-shadow: #000 1px 1px 0
+    }
+
+    .container .header_nav ul .submenu {
+        /*padding: 0 10px*/
+    }
+
+    .container .submenu {
+        background: #000;
+        top: 6vh;
+        left: -11vw
+    }
+
+    .container .main {
+        /*left: 5vw*/
+    }
+
+    .container .main a, .container .main b, .container .main p {
+        color: #e5e5e5;
+        /*text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;*/
+    }
+
+    .container .main .contacts__btn {
+        margin-top: 15px;
+        margin-bottom: 41vh
+    }
+
+
+    .contacts-footer {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        line-height: 1
+    }
+
+    .container .main-footer ul {
+        display: block;
+        /*text-align: center;*/
+        margin: 0
+    }
+
+    .index-footer__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #polyfil {
+        display: none
+    }
+
+    #main-logo .contacts__logo{
+        position: fixed;
+        max-width: none;
+        width: 40vw;
+        top: 11vh;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%)
+    }
+
+    .contact-map {
+        width: 100%;
+        height: 39vh;
+        right: 0;
+        bottom: 0
+    }
+
+    .mr-20 {
+        /*margin-right: 0;*/
+        /*width: 33%;*/
+        /*text-align: center;*/
+        /*-webkit-align-self: center;*/
+        /*-ms-flex-item-align: center;*/
+        /*-ms-grid-row-align: center;*/
+        /*align-self: center*/
+    }
+
+    .mr-20 a {
+        /*text-align: center*/
+    }
+
+    .fa {
+        font-size: 3.5vh
+    }
+}
