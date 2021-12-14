@@ -7,6 +7,7 @@ Template Name: Главная
 <?php
 get_header();
 ?>
+
 <style>
 	.hamburger-icon {
 		top: 7%;
@@ -40,9 +41,12 @@ get_header();
 			<li class="menu__item scalable mr-20">
 				<a id="uslugi" href="/service/" class="menu__link mr-22">Услуги <i class="fa fa-angle-down"></i></a>
 				<ul class="submenu index__submenu">
-					<li class="submenu__item"><a class="submenu__link" href="/service/construction-work/">Строительные работы</a></li>
-					<li class="submenu__item"><a class="submenu__link" href="/service/visotnie-raboti/">Высотные работы</a></li>
-					<li class="submenu__item"><a class="submenu__link" href="/service/vnutrennii_remontnie_raboti/">Внутренние ремонтные работы</a></li>
+					<li class="submenu__item"><a class="submenu__link" href="/service/construction-work/">Строительные
+							работы</a></li>
+					<li class="submenu__item"><a class="submenu__link" href="/service/visotnie-raboti/">Высотные
+							работы</a></li>
+					<li class="submenu__item"><a class="submenu__link" href="/service/vnutrennii_remontnie_raboti/">Внутренние
+							ремонтные работы</a></li>
 					<li class="submenu__item"><a class="submenu__link" href="/service/facade/">Фасадные работы</a></li>
 					<li class="submenu__item"><a class="submenu__link" href="/service/roof/">Кровельные работы</a></li>
 					<li class="submenu__item"><a class="submenu__link" href="/service/snow/">Очистка от снега</a></li>
@@ -107,7 +111,8 @@ get_header();
 					   href="tel:<?php the_field('main_phone_two'); ?>"><?php the_field('main_phone_two'); ?></a>
 				</div>
 				<div class="index-footer__item-wrap"><a class="address-mail__link"
-					   href="mailto:spb178.com@yandex.ru"><?php the_field('main_mail'); ?></a></div>
+														href="mailto:spb178.com@yandex.ru"><?php the_field('main_mail'); ?></a>
+				</div>
 				<div class="index-footer__item-wrap">
 					<p class="work-hour"><?php the_field('main_open_hour'); ?></p>
 				</div>

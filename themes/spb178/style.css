@@ -325,6 +325,11 @@ a {
 	color: #f88f3b;
 }
 
+.service-item {
+	font-size: 14px;
+	padding: 5px 0;
+}
+
 .big-foto {
 	margin-left: auto;
 	margin-right: auto;

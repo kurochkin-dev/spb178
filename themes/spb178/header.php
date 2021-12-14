@@ -15,8 +15,6 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 	<meta name="format-detection" content="telephone=no">
 
-	<!--	<link href="/css/--><?php //echo $prefix; ?><!--vakancii.css" rel="stylesheet"/>-->
-
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=ac441832-f13a-4b1d-9214-122da571f681&amp;lang=ru_RU"
 			type="text/javascript"></script>
 
@@ -56,14 +54,20 @@
 		<div><img src="https://mc.yandex.ru/watch/30583767" style="position:absolute; left:-9999px;" alt=""/></div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'G-FSRS8RET4H');
+	</script>
 
     <?php
 
     if (is_home()) {
         get_header();
-    } else {
-//        get_header('home');
     }
     ?>
 	<?php

@@ -141,7 +141,7 @@ get_header('home');
 
         async function init() {
             var myMap = new ymaps.Map('map', {
-                    center: [59.866974, 30.468195],
+                    center: [59.867995, 30.461287],
                     zoom: 16,
                     controls: []
                 }),

@@ -396,10 +396,8 @@
 		min-width: 285px;
 		background: #0c0c0c;
 		border-radius: 5px;
-	}
+		transform: translateX(-50px);
 
-	.index__submenu {
-		max-width: 100%;
 	}
 
 	.middle__submenu {
@@ -407,7 +405,8 @@
 	}
 
 	.index__submenu {
-		border: 1px solid #F8620B;
+		border: 1px solid #f88f3b;
+		max-width: 100%;
 	}
 
 	.contacts__submenu, .middle__submenu {
@@ -416,6 +415,7 @@
 
 	.container .submenu {
 		position: static;
+		transform: translateX(-50px);
 	}
 
 	.submenu li a {
@@ -1063,17 +1063,14 @@
 @media (max-width: 414px) {
 
 	.index-menu {
-		left: 17%;
 		text-align: left;
 	}
 
 	.contacts-menu {
-		left: 17%;
 		text-align: left;
 	}
 
 	.menu-main {
-		/*left: 30%;*/
 		text-align: left;
 	}
 
@@ -1348,6 +1345,10 @@
 @media (max-width: 320px) {
 	.head-address {
 		height: 79px;
+	}
+
+	.container .submenu {
+		transform: translateX(-60px);
 	}
 
 	.round {

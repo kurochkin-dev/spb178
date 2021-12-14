@@ -6,6 +6,13 @@ Template Name: Контакты
 <?php
 get_header();
 ?>
+	<script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById('ya-map').src = 'https://yandex.ru/map-widget/v1/-/CKw3bPJC';
+            }, 1500);
+        };
+	</script>
 	<style>
 		.hamburger-icon {
 			top: 10%;

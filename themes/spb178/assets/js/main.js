@@ -62,6 +62,7 @@ if (document.documentElement.clientWidth > 879) {
     setTimeout(function () {
             $('#subnav').show(2000);
             $('#uslugi').css('color', '#f2c900');
+            $('.mr-22').css('color', '#f88f3b');
         }, 19000
     );
 }
@@ -70,9 +71,6 @@ $('#blue, html, body, .dark-blue.slide').click(function () {
     hideMenu();
 });
 
-// $('#blue, html, body, .dark-blue.slide').touches(function () {
-//     hideMenu();
-// });
 
 function hideMenu() {
     $('.submenu').slideUp(400);
