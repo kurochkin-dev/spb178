@@ -21,11 +21,6 @@
     height: 100vh
 }
 
-/*.container a, .container li, .container p {*/
-/*    color: #e5e5e5;*/
-/*    font-size: 1.7vh*/
-/*}*/
-
 .container .submenu {
     background: 0 0
 }
@@ -39,14 +34,12 @@
 }
 
 ul {
-    /*list-style: none;*/
     margin: 0;
     padding: 0
 }
 
 .main {
     position: absolute;
-    /*left: 5vw;*/
     bottom: 0
 }
 
@@ -67,14 +60,6 @@ b {
     margin: 50px 0 15px;
 }
 
-.main a, .main p {
-    /*color: #000*/
-}
-
-/*.offer b, .offer a, .offer p {*/
-/*    color: #000000;*/
-/*}*/
-
 button p {
     color: #000000;
 }
@@ -83,15 +68,10 @@ button p {
     width: 17vw
 }
 
-.offer {
-    /*margin-top: 50px;*/
-    /*color: #000000;*/
-}
 
 .offer p {
     line-height: 1.5;
     margin: 0;
-    /*color: #000000;*/
 }
 
 .offer p:not(:last-child) {
@@ -189,19 +169,28 @@ button p {
 
 
 #ya-map {
-    /*max-width: 533px;*/
     width: 100%;
     border: none;
     border-radius: 10px;
 }
 
 .icon-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .icon-list-item {
+    display: -webkit-box!important;
+    display: -ms-flexbox!important;
     display: flex!important;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
 }
 
@@ -228,10 +217,6 @@ button p {
         width: 22vw
     }
 
-    .main {
-        /*left: 3.3vw*/
-    }
-
     .main ul {
         margin: 30px 0 15px
     }
@@ -246,9 +231,6 @@ button p {
 }
 
 @media (max-width: 1280px) {
-    .main {
-        /*left: 3.3vw*/
-    }
 
     .main p {
         font-size: 16px
@@ -292,10 +274,6 @@ button p {
         display: none
     }
 
-    .main {
-        /*left: 3.3vw*/
-    }
-
     .main p {
         font-size: 14px
     }
@@ -322,10 +300,6 @@ button p {
         font-size: 16px
     }
 
-    .main a {
-        /*font-size: 16px !important*/
-    }
-
     .contact-map {
         height: 44vh
     }
@@ -350,20 +324,12 @@ button p {
         right: 20px
     }
 
-    /*.container .header_nav ul .submenu {*/
-    /*    padding: 0 10px*/
-    /*}*/
-
     .main p {
         font-size: 12px
     }
 
     .main p:last-child {
         padding: 5px 0 0 5px
-    }
-
-    .main a {
-        /*font-size: 12px;*/
     }
 
     .main ul {
@@ -373,10 +339,8 @@ button p {
 
     .main .offer {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         width: 260px;
@@ -385,7 +349,6 @@ button p {
 
     .main .offer p:nth-child(2) a:last-child {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
         margin-left: 65px
@@ -421,21 +384,17 @@ button p {
     .container .header_nav {
         width: 100%;
         margin-top: 0;
-        /*padding-right: 3vw;*/
         right: 0;
         z-index: 1
     }
 
     .container .header_nav .menu {
         display: -webkit-box;
-        display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-        -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         -webkit-box-pack: center;
-        -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center
     }
@@ -444,30 +403,20 @@ button p {
         text-shadow: #000 1px 1px 0
     }
 
-    .container .header_nav ul .submenu {
-        /*padding: 0 10px*/
-    }
-
     .container .submenu {
         background: #000;
         top: 6vh;
         left: -11vw
     }
 
-    .container .main {
-        /*left: 5vw*/
-    }
-
     .container .main a, .container .main b, .container .main p {
         color: #e5e5e5;
-        /*text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0;*/
     }
 
     .container .main .contacts__btn {
         margin-top: 15px;
         margin-bottom: 41vh
     }
-
 
     .contacts-footer {
         position: absolute;
@@ -478,12 +427,16 @@ button p {
 
     .container .main-footer ul {
         display: block;
-        /*text-align: center;*/
         margin: 0
     }
 
     .index-footer__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
 
@@ -507,20 +460,6 @@ button p {
         height: 39vh;
         right: 0;
         bottom: 0
-    }
-
-    .mr-20 {
-        /*margin-right: 0;*/
-        /*width: 33%;*/
-        /*text-align: center;*/
-        /*-webkit-align-self: center;*/
-        /*-ms-flex-item-align: center;*/
-        /*-ms-grid-row-align: center;*/
-        /*align-self: center*/
-    }
-
-    .mr-20 a {
-        /*text-align: center*/
     }
 
     .fa {

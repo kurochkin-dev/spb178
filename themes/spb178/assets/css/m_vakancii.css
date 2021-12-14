@@ -136,6 +136,7 @@ a {
 }
 
 .header__phones {
+	display: -ms-grid;
 	display: grid;
 	gap: .09em 0;
 	margin-right: .15em;
@@ -179,6 +180,7 @@ a {
 }
 
 .about-company-description {
+	display: -ms-grid;
 	display: grid;
 	gap: .2em 0;
 	padding: 0 .15em
@@ -251,6 +253,7 @@ a {
 
 .modalW nav section ul {
 	list-style: none;
+	display: -ms-grid;
 	display: grid;
 	gap: .1em 0
 }
@@ -363,12 +366,14 @@ a {
 }
 
 .modalW-bottom .row {
+	display: -ms-grid;
 	display: grid;
 	grid-auto-flow: column;
 	gap: 0 .27em
 }
 
 .modalW-bottom .row .col {
+	display: -ms-grid;
 	display: grid
 }
 
@@ -398,6 +403,7 @@ a {
 
 .modalW-bottom .row2 {
 	margin-top: .2em;
+	display: -ms-grid;
 	display: grid;
 	gap: .05em 0
 }
@@ -462,8 +468,8 @@ a {
 }
 
 .vacancy .swiper-pagination-bullet-active {
-	background: -webkit-gradient(linear, left top, left bottom, from(#ffc300), color-stop(51.43%, #ff7304));
 	background: -o-linear-gradient(top, #ffc300 0, #ff7304 51.43%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffc300), color-stop(51.43%, #ff7304));
 	background: linear-gradient(180deg, #ffc300 0, #ff7304 51.43%)
 }
 
@@ -481,6 +487,7 @@ a {
 
 .choose-container {
 	margin-top: .63em;
+	display: -ms-grid;
 	display: grid;
 	gap: .3em 0
 }
@@ -544,12 +551,14 @@ a {
 .connect-to-team .forma {
 	margin-top: .44em;
 	margin-bottom: .3em;
+	display: -ms-grid;
 	display: grid;
 	gap: .3em 0
 }
 
 .connect-to-team .forma section {
 	width: 2em;
+	display: -ms-grid;
 	display: grid;
 	gap: .25em 0;
 	margin: 0 auto
@@ -602,8 +611,8 @@ a {
 	-ms-flex-pack: center;
 	justify-content: center;
 	margin: 0 auto;
-	background: -webkit-gradient(linear, left top, left bottom, from(#ffc300), color-stop(51.43%, #ff7304));
 	background: -o-linear-gradient(top, #ffc300 0, #ff7304 51.43%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffc300), color-stop(51.43%, #ff7304));
 	background: linear-gradient(180deg, #ffc300 0, #ff7304 51.43%)
 }
 
@@ -648,11 +657,13 @@ a {
 }
 
 .contacts-column {
+	display: -ms-grid;
 	display: grid;
 	gap: .2em 0
 }
 
 .contacts-column .row {
+	display: -ms-grid;
 	display: grid;
 	gap: .1em 0
 }
@@ -674,11 +685,13 @@ a {
 }
 
 .contacts-column .col {
+	display: -ms-grid;
 	display: grid;
 	gap: .1em 0
 }
 
 .contacts-column .col__links {
+	display: -ms-grid;
 	display: grid;
 	gap: .1em 0
 }
@@ -699,6 +712,7 @@ footer {
 
 footer .column {
 	position: relative;
+	display: -ms-grid;
 	display: grid;
 	gap: 0 .25em;
 	grid-auto-flow: column
@@ -706,6 +720,7 @@ footer .column {
 
 footer .column .nav ul {
 	list-style: none;
+	display: -ms-grid;
 	display: grid;
 	gap: .05em 0
 }
@@ -725,6 +740,7 @@ footer .column .nav ul li a {
 
 footer .column .uslugi ul {
 	list-style: none;
+	display: -ms-grid;
 	display: grid;
 	gap: .05em 0
 }
@@ -744,6 +760,7 @@ footer .column .uslugi ul li a {
 
 footer .soc {
 	margin-top: .35em;
+	display: -ms-grid;
 	display: grid;
 	gap: .18em 0
 }
@@ -753,6 +770,7 @@ footer .soc-p p {
 }
 
 footer .soc-icons {
+	display: -ms-grid;
 	display: grid;
 	grid-auto-flow: column;
 	width: -webkit-max-content;
@@ -831,5 +849,3 @@ footer #footer-img {
 		width: 100%
 	}
 }
-
-/*# sourceMappingURL=m_vakancii.css.map */

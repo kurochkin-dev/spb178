@@ -123,7 +123,6 @@ input {
 }
 
 .wpcf7-acceptance input[type=checkbox] {
-	/*position: relative;*/
 	position: absolute;
 	visibility: hidden;
 	width: 30px;
@@ -136,15 +135,12 @@ input {
 	display: block;
 	position: absolute;
 	content: '';
-	/*border-radius: 0;*/
 	height: 18px;
 	width: 18px;
 	bottom: 15px;
 	left: -9%;
 	background: #FFFFFF;
 	border: 1px solid #ee6a09;
-	/*background-color: #fff;*/
-	/*border: #adb5bd solid 1px;*/
 	border-radius: 0.25rem;
 
 }
@@ -178,41 +174,6 @@ input {
 	display: block;
 }
 
-/*.modalW .form-container .custom-control__input {*/
-/*	position: absolute;*/
-/*	!*z-index: -1;*!*/
-/*	left: -5%;*/
-/*	opacity: 0;*/
-/*	width: 15px;*/
-/*	height: 15px;*/
-/*	display: block;*/
-/*}*/
-
-/*.modalW .form-container .custom-control__input:checked ~ .custom-control__label::after {*/
-/*	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")*/
-/*}*/
-
-/*.modalW .form-container .custom-control__input:checked ~ .custom-control__label::before {*/
-/*	color: #fff;*/
-/*	border-color: #f88f3b;*/
-/*	background-color: #f88f3b*/
-/*}*/
-
-/*.modalW .form-container .custom-control__input:focus ~ .custom-control__label::before {*/
-/*	-webkit-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);*/
-/*	box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)*/
-/*}*/
-
-/*.modalW .form-container .custom-control__input:focus:not(:checked) ~ .custom-control__label::before {*/
-/*	border-color: #f88f3b*/
-/*}*/
-
-/*.modalW .form-container .custom-control__input:active ~ .custom-control__label::before {*/
-/*	color: #fff;*/
-/*	background-color: #ffc595;*/
-/*	border-color: #ffc595*/
-/*}*/
-
 .modalW .form-container .custom-control__label {
 	position: relative;
 	margin-bottom: 0;
@@ -220,36 +181,6 @@ input {
 	font-size: 1.25vh;
 	text-align: justify
 }
-
-/*.modalW .form-container .custom-control__label::before {*/
-/*	position: absolute;*/
-/*	top: .25rem;*/
-/*	left: -1.5rem;*/
-/*	display: block;*/
-/*	width: .9rem;*/
-/*	height: .9rem;*/
-/*	pointer-events: none;*/
-/*	content: "";*/
-/*	background-color: #fff;*/
-/*	border: #adb5bd solid 1px;*/
-/*	border-radius: .25rem;*/
-/*	-webkit-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;*/
-/*	transition: background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;*/
-/*	-o-transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;*/
-/*	transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;*/
-/*	transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out*/
-/*}*/
-
-/*.modalW .form-container .custom-control__label::after {*/
-/*	position: absolute;*/
-/*	top: 4px;*/
-/*	left: -24px;*/
-/*	width: 1rem;*/
-/*	height: 1rem;*/
-/*	content: "";*/
-/*	background: no-repeat 50%/50% 50%;*/
-/*	display: block;*/
-/*}*/
 
 .modalW .form-container .custom-control__label a {
 	text-decoration: none;
@@ -259,15 +190,12 @@ input {
 
 .modalW .form-head {
 	display: -webkit-box;
-	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-align: center;
-	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
 	-webkit-box-pack: center;
-	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
 	margin: 0 auto;
@@ -368,11 +296,6 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 	display: none !important;
 }
 
-/*span.wpcf7-not-valid-tip {*/
-/*	display: none;*/
-/*}*/
-
-
 .modal_mail, .modal_text {
 	width: 100%;
 }
@@ -387,13 +310,14 @@ input[aria-invalid="true"], select[aria-invalid="true"] {
 	background-color: rgba(153, 0, 0, 0.3);
 }
 
-
 .ceo-message {
 	position: absolute;
 	max-width: 100%;
 	margin: 0 auto;
 	visibility: hidden;
 	opacity: 0;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 	top: -1000px;
 	right: 0;
@@ -401,20 +325,26 @@ input[aria-invalid="true"], select[aria-invalid="true"] {
 	left: 0;
 	z-index: 1000;
 	background: #000000;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
 	align-items: flex-start;
 	padding: 30px 15px 20px 15px;
 }
 .ceo-message__container {
 	margin: 0 auto;
-	/*width: 1200px;*/
 	width: 70%;
 	max-height: 100%;
 	overflow-y: auto;
-	/*overflow-x: hidden;*/
-	/*padding: 10px 20px;*/
 }
 
 .ceo-message_active {
@@ -422,6 +352,8 @@ input[aria-invalid="true"], select[aria-invalid="true"] {
 	top: 0;
 	visibility: visible;
 	opacity: 1;
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
 }
 
@@ -466,7 +398,11 @@ input[aria-invalid="true"], select[aria-invalid="true"] {
 
 .ceo-message__outer {
 	max-width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
 }
 
@@ -491,9 +427,6 @@ input[aria-invalid="true"], select[aria-invalid="true"] {
 
 .ceo-message__inner {
 	width: 100%;
-	/*margin-top: 15px;*/
-	/*display: flex;*/
-	/*flex-direction: column;*/
 }
 
 @media screen and (min-width: 1367px) {
@@ -539,6 +472,9 @@ input[aria-invalid="true"], select[aria-invalid="true"] {
 	}
 
 	.ceo-message__outer {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
 		flex-direction: column;
 	}
 
@@ -551,9 +487,6 @@ input[aria-invalid="true"], select[aria-invalid="true"] {
 		max-width: 100%;
 	}
 
-	/*.ceo-message__inner {*/
-	/*	width: 100%;*/
-	/*}*/
 	.ceo-message__block {
 		width: 97%;
 	}
@@ -675,9 +608,6 @@ input[aria-invalid="true"], select[aria-invalid="true"] {
 		text-align: center;
 	}
 
-	/*.ceo-message__block {*/
-	/*	width: 97%;*/
-	/*}*/
 }
 
 @media screen and (max-width: 414px) and (orientation: portrait) {

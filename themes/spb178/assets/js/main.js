@@ -488,6 +488,10 @@ $("#contacts-right-column").on("click", "#contacts-send", function () {
     init();
 })();
 
+let card = document.querySelectorAll('.card-wrap');
+console.log(card);
+
+
 $(document).on("ready", function () {
     [].forEach.call(document.querySelectorAll('input[name="phone"]'), function (e) {
         var t;
