@@ -16,7 +16,7 @@ get_header('home');
 				$title = get_sub_field('service_title');
 				$desc = get_sub_field('service_desc');
                 ?>
-				<a class="app" id="app" href="<?php echo $link; ?>">
+				<a class="app" href="<?php echo $link; ?>">
 					<div class="card-wrap cardHov">
 						<div class="card">
 							<div class="card-bg"

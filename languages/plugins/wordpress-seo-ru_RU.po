@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Yoast SEO - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-09-30 13:12:47+0000\n"
+"PO-Revision-Date: 2021-12-09 08:49:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,28 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: ru\n"
 "Project-Id-Version: Plugins - Yoast SEO - Stable (latest release)\n"
+
+#. translators: %s: expands to 'Yoast SEO Premium'.
+#: src/integrations/admin/workouts-integration.php:400
+msgid "Activate %s"
+msgstr "Активировать %s"
+
+#. translators: %s: expands to 'Yoast SEO Premium'.
+#: src/integrations/admin/workouts-integration.php:319
+msgid "Activate your subscription of %s"
+msgstr "Активируйте подписку на %s"
+
+#: languages/wordpress-seojs.php:1067 js/dist/workouts-1771.js:6
+msgid "Twitter URL"
+msgstr "Twitter URL"
+
+#: languages/wordpress-seojs.php:859 js/dist/workouts-1771.js:12
+msgid "Continue"
+msgstr "Продолжить"
+
+#: inc/class-wpseo-replace-vars.php:1465
+msgid "Post Content"
+msgstr "Содержимое записи"
 
 #: languages/yoast-seo-js.php:258
 msgid "%3$sKeyphrase length%5$s: The keyphrase is %1$d words long. That's slightly shorter than the recommended minimum of %2$d words. %4$sMake it longer%5$s!"

@@ -78,15 +78,15 @@
 			},
 
 			overlay : {
-				translation : {x: 10, y: 10, z: [0,50]},
+				translation : {x: 5, y: 5, z: [0,50]},
 				reverseAnimation : {
-					duration : 300,
+					duration : 500,
 					easing : 'easeOutExpo'
 				}
 			},
 
 			shine : {
-				translation : {x: 20, y: 20, z: 0},
+				translation : {x: -50, y: -50, z: 0},
 				reverseAnimation : {
 					duration : 1200,
 					easing : 'easeOutElastic',
@@ -103,9 +103,9 @@
 		this.DOM.animatable = {};
 		this.DOM.animatable.imgWrapper = this.DOM.el.querySelector('.card');
 		this.DOM.animatable.lines = this.DOM.el.querySelector('.card-wrap');
-		this.DOM.animatable.caption = this.DOM.el.querySelector('.service__desc');
+		this.DOM.animatable.caption = this.DOM.el.querySelector('.card-info p');
 		this.DOM.animatable.overlay = this.DOM.el.querySelector('.card-bg');
-		this.DOM.animatable.shine = this.DOM.el.querySelector('.card-bg');
+		this.DOM.animatable.shine = this.DOM.el.querySelector('.app');
 		this._initEvents();
 	};
 

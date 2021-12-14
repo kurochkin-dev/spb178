@@ -63,20 +63,24 @@
 	<div id="head-adress" class="head-address">
 		<div class="top-address top-address-adr">
 			<ul>
-				<li class="top-address-text top-address-text1" id="top-adress-text1"><a href="https://yandex.ru/maps/-/CWDm5AN3" rel="nofollow" target="_blank">Санкт-Петербург, м. Пролетарская, проспект Обуховской Обороны, 199</a></li>
+				<li class="top-address-text top-address-text1" id="top-address-text1">
+					<a class="header__address" href="https://yandex.ru/maps/-/CWDm5AN3" rel="nofollow" target="_blank">
+						Санкт-Петербург, м. Пролетарская, проспект Обуховской Обороны, 199
+					</a>
+				</li>
 			</ul>
 		</div>
 		<div class="top-address top-address-tel top-address-text">
 			<ul class="ul-address">
-				<li><a href="tel: +78124545578">+7 (812) 454-55-78</a><br></li>
-				<li><a href="tel: +79219476179">+7 (921) 947-61-79</a></li>
+				<li><a class="header__tel" href="tel: +78124545578">+7 (812) 454-55-78</a><br></li>
+				<li><a class="header__tel" href="tel: +79219476179">+7 (921) 947-61-79</a></li>
 			</ul>
 		</div>
 		<div class="top-address top-address-none top-address-text">
-			<span><a href="mailto: spb178.com@yandex.ru">spb178.com@yandex.ru</a></span>
+			<span><a class="header__mail" href="mailto: spb178.com@yandex.ru">spb178.com@yandex.ru</a></span>
 		</div>
 		<div class="top-address">
-			<button id="top-button" class="top-adress-text modalShow">Заказать звонок</button>
+			<button id="top-button" class="top-button top-address-text modalShow">Заказать звонок</button>
 		</div>
 	</div>
 	<div id="cont-logo" class="cont-logo">
@@ -107,21 +111,25 @@
 			<ul class="menu menu-main">
 				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/">Главная</a></li>
 				<li class="menu__item scalable mr-20">
-					<a class="menu__link punkt-menu item-service" id="uslugi" href="/service/" style="color: #e5e5e5;">Услуги<i class="fa fa-angle-down mar5"></i></a>
+					<a class="menu__link punkt-menu item-service" id="uslugi" href="/service/" style="color: #e5e5e5;">Услуги<i
+							class="fa fa-angle-down mar5"></i></a>
 					<ul class="submenu middle__submenu">
 						<li><a class="punkt-menu" href="/service/construction-work/">Строительные работы</a></li>
 						<li><a class="punkt-menu" href="/service/visotnie-raboti/">Высотные работы</a></li>
-						<li><a class="punkt-menu" href="/service/vnutrennii_remontnie_raboti">Внутренние ремонтные работы</a></li>
+						<li><a class="punkt-menu" href="/service/vnutrennii_remontnie_raboti">Внутренние ремонтные
+								работы</a></li>
 						<li><a class="punkt-menu" href="/service/facade/">Фасадные работы</a></li>
 						<li><a class="punkt-menu" href="/service/roof/">Кровельные работы</a></li>
 						<li><a class="punkt-menu" href="/service/snow/">Очистка от снега</a></li>
 					</ul>
 				</li>
-				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu"  href="/cro/">Допуски</a></li>
-				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu"  href="/video/">Видео</a></li>
+				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/cro/">Допуски</a></li>
+				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/video/">Видео</a></li>
 				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/about/">Отзывы</a></li>
-				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/galereya/">Галерея</a></li>
-				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/vakansii/">Вакансии</a></li>
+				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/galereya/">Галерея</a>
+				</li>
+				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/vakansii/">Вакансии</a>
+				</li>
 				<li class="menu__item scalable"><a class="menu__link punkt-menu" href="/contact/">Контакты</a></li>
 			</ul>
 		</nav>
