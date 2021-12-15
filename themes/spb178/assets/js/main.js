@@ -223,6 +223,14 @@ round.forEach(e => e.addEventListener("click", function (e) {
     vacancyBtn.classList.add("active");
 }));
 
+document.addEventListener( 'wpcf7submit', function( event ) {
+    alert( "Ваша заявка успешно отправлена!" );
+    if (rightColumn) {
+        rightColumn.classList.remove("active");
+    }
+    modalW.classList.remove("active");
+}, false );
+
 
 $("#customCheck").on("change", function () {
     $("#customCheck").prop("checked") ? $("#submit").attr("disabled", !1).addClass("active") : $("#submit").attr("disabled", !0).removeClass("active")
@@ -243,80 +251,81 @@ $("img.svg").each(function () {
             c = c.removeAttr("xmlns:a"), e.replaceWith(c)
     }, "xml")
 });
-$("#modalW").on("click", "#submit", function () {
-    var e, t = $(this).closest(".forma");
-    var btn = $(this),
-        p_btn = btn.find("p"),
-        name = t.find('input[name="name"]').val(),
-        mail = t.find('input[name="mail"]').val(),
-        phone_el = t.find('input[name="phone"]'),
-        e = phone_el.val(),
-        textarea = t.find("textarea").val();
-    console.log(name, mail, e, textarea),
-        ch = "Форма в шапке\n",
-        e.length < 18 ? (phone_el.addClass("invalid-phone"),
-            e = phone_el.val(),
-            phone_el.val("Введите номер корректно"),
-            phone_el.css("color", "red"),
-            console.log(e),
-            btn.prop("disabled", !0),
-            setTimeout(function () {
-                phone_el.removeClass("invalid-phone"),
-                    phone_el.val(e),
-                    phone_el.css("color", "black"),
-                    btn.prop("disabled", !1)
-            }, 2e3)) : $.ajax({
-            url: "/wp-content/themes/spb178/api/new.php",
-            type: "post",
-            dataType: "json",
-            data: {name: name, phone: e, mail: mail, ch: ch, textarea: textarea},
-            beforeSend: function () {
-                p_btn.html("Идёт отправка...")
-            },
-            success: function () {
-                setTimeout(function () {
-                    p_btn.text("Отправлено! :)"), btn.prop("disabled", !1), t.find('input[name="name"]').val(""), t.find('input[name="phone"]').val(""), t.find('input[name="mail"]').val(""), t.find("textarea").val(""), setTimeout(function () {
-                        p_btn.html("Оставить заявку")
-                    }, 1200)
-                }, 1200)
-            }
-        })
-});
 
-$("#contacts-right-column").on("click", "#contacts-send", function () {
-    var e, t = $(this).closest(".forma");
-    var btn = $(this), p_btn = btn.find("p"),
-        name = t.find('input[name="name"]').val(),
-        phone_el = t.find('input[name="phone"]'),
-        e = phone_el.val(),
-        ch = "Форма в центре\n";
-    e.length < 18 ? (phone_el.addClass("invalid-phone"),
-        e = phone_el.val(), phone_el.val("Введите номер корректно"),
-        phone_el.css("color", "red"),
-        console.log(e),
-        btn.prop("disabled", !0),
-        setTimeout(function () {
-            phone_el.removeClass("invalid-phone"),
-                phone_el.val(e),
-                phone_el.css("color", "black"),
-                btn.prop("disabled", !1)
-        }, 2e3)) : $.ajax({
-        url: "/wp-content/themes/spb178/api/new.php",
-        type: "post",
-        dataType: "json",
-        data: {name: name, phone: e, ch: ch},
-        beforeSend: function () {
-            p_btn.html("Идёт отправка...")
-        },
-        success: function () {
-            setTimeout(function () {
-                p_btn.text("Отправлено! :)"), btn.prop("disabled", !1), t.find('input[name="name"]').val(""), t.find('input[name="phone"]').val(""), setTimeout(function () {
-                    p_btn.html("Присоединиться к команде")
-                }, 1200)
-            }, 1200)
-        }
-    })
-});
+// $("#modalW").on("click", "#submit", function () {
+//     var e, t = $(this).closest(".forma");
+//     var btn = $(this),
+//         p_btn = btn.find("p"),
+//         name = t.find('input[name="name"]').val(),
+//         mail = t.find('input[name="mail"]').val(),
+//         phone_el = t.find('input[name="phone"]'),
+//         e = phone_el.val(),
+//         textarea = t.find("textarea").val();
+//     console.log(name, mail, e, textarea),
+//         ch = "Форма в шапке\n",
+//         e.length < 18 ? (phone_el.addClass("invalid-phone"),
+//             e = phone_el.val(),
+//             phone_el.val("Введите номер корректно"),
+//             phone_el.css("color", "red"),
+//             console.log(e),
+//             btn.prop("disabled", !0),
+//             setTimeout(function () {
+//                 phone_el.removeClass("invalid-phone"),
+//                     phone_el.val(e),
+//                     phone_el.css("color", "black"),
+//                     btn.prop("disabled", !1)
+//             }, 2e3)) : $.ajax({
+//             url: "/wp-content/themes/spb178/api/new.php",
+//             type: "post",
+//             dataType: "json",
+//             data: {name: name, phone: e, mail: mail, ch: ch, textarea: textarea},
+//             beforeSend: function () {
+//                 p_btn.html("Идёт отправка...")
+//             },
+//             success: function () {
+//                 setTimeout(function () {
+//                     p_btn.text("Отправлено! :)"), btn.prop("disabled", !1), t.find('input[name="name"]').val(""), t.find('input[name="phone"]').val(""), t.find('input[name="mail"]').val(""), t.find("textarea").val(""), setTimeout(function () {
+//                         p_btn.html("Оставить заявку")
+//                     }, 1200)
+//                 }, 1200)
+//             }
+//         })
+// });
+
+// $("#contacts-right-column").on("click", "#contacts-send", function () {
+//     var e, t = $(this).closest(".forma");
+//     var btn = $(this), p_btn = btn.find("p"),
+//         name = t.find('input[name="name"]').val(),
+//         phone_el = t.find('input[name="phone"]'),
+//         e = phone_el.val(),
+//         ch = "Форма в центре\n";
+//     e.length < 18 ? (phone_el.addClass("invalid-phone"),
+//         e = phone_el.val(), phone_el.val("Введите номер корректно"),
+//         phone_el.css("color", "red"),
+//         console.log(e),
+//         btn.prop("disabled", !0),
+//         setTimeout(function () {
+//             phone_el.removeClass("invalid-phone"),
+//                 phone_el.val(e),
+//                 phone_el.css("color", "black"),
+//                 btn.prop("disabled", !1)
+//         }, 2e3)) : $.ajax({
+//         url: "/wp-content/themes/spb178/api/new.php",
+//         type: "post",
+//         dataType: "json",
+//         data: {name: name, phone: e, ch: ch},
+//         beforeSend: function () {
+//             p_btn.html("Идёт отправка...")
+//         },
+//         success: function () {
+//             setTimeout(function () {
+//                 p_btn.text("Отправлено! :)"), btn.prop("disabled", !1), t.find('input[name="name"]').val(""), t.find('input[name="phone"]').val(""), setTimeout(function () {
+//                     p_btn.html("Присоединиться к команде")
+//                 }, 1200)
+//             }, 1200)
+//         }
+//     })
+// });
 
 //Animate effects on the service page
 (function () {
@@ -485,10 +494,6 @@ $("#contacts-right-column").on("click", "#contacts-send", function () {
     }
     init();
 })();
-
-let card = document.querySelectorAll('.card-wrap');
-console.log(card);
-
 
 $(document).on("ready", function () {
     [].forEach.call(document.querySelectorAll('input[name="phone"]'), function (e) {
