@@ -184,6 +184,12 @@
 	}
 }
 
+@media (max-width: 1153px) {
+	.ul-address {
+		display: block;
+	}
+}
+
 @media (max-width: 1024px) {
 	.round {
 		left: 40%;
