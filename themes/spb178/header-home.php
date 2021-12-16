@@ -60,10 +60,10 @@
 </head>
 
 <header class="header">
-	<div id="head-adress" class="head-address">
+	<div class="head-address">
 		<div class="top-address top-address-adr">
 			<ul>
-				<li class="top-address-text top-address-text1" id="top-address-text1">
+				<li class="top-address-text top-address-text1">
 					<a class="header__address" href="https://yandex.ru/maps/-/CWDm5AN3" rel="nofollow" target="_blank">
 						<?php the_field('header_address', 'option'); ?>
 					</a>
@@ -80,7 +80,7 @@
 			<span><a class="header__mail" href="mailto: spb178.com@yandex.ru"><?php the_field('header_mail', 'option'); ?></a></span>
 		</div>
 		<div class="top-address">
-			<button id="top-button" class="top-button top-address-text modalShow">Заказать звонок</button>
+			<button class="top-button top-address-text modalShow">Заказать звонок</button>
 		</div>
 	</div>
 	<div id="cont-logo" class="cont-logo">
