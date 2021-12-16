@@ -65,19 +65,22 @@
 			<ul>
 				<li class="top-address-text top-address-text1">
 					<a class="header__address" href="https://yandex.ru/maps/-/CWDm5AN3" rel="nofollow" target="_blank">
-						<?php the_field('header_address', 'option'); ?>
+                        <?php the_field('header_address', 'option'); ?>
 					</a>
 				</li>
 			</ul>
 		</div>
 		<div class="top-address top-address-tel top-address-text">
 			<ul class="ul-address">
-				<li><a class="header__tel" href="tel: +78124545578"><?php the_field('header_phone_one', 'option'); ?></a><br></li>
-				<li><a class="header__tel" href="tel: +79219476179"><?php the_field('header_phone_two', 'option'); ?></a></li>
+				<li><a class="header__tel"
+					   href="tel: +78124545578"><?php the_field('header_phone_one', 'option'); ?></a><br></li>
+				<li><a class="header__tel"
+					   href="tel: +79219476179"><?php the_field('header_phone_two', 'option'); ?></a></li>
 			</ul>
 		</div>
 		<div class="top-address top-address-none top-address-text">
-			<span><a class="header__mail" href="mailto: spb178.com@yandex.ru"><?php the_field('header_mail', 'option'); ?></a></span>
+			<span><a class="header__mail"
+					 href="mailto: spb178.com@yandex.ru"><?php the_field('header_mail', 'option'); ?></a></span>
 		</div>
 		<div class="top-address">
 			<button class="top-button top-address-text modalShow">Заказать звонок</button>
@@ -88,9 +91,9 @@
 			<a href="/">
 				<picture class="logo">
 					<source
-						srcset="<?php the_field('header_logo_webp', 'option');?>"
+						srcset="<?php the_field('header_logo_webp', 'option'); ?>"
 						type="image/webp">
-					<img class="logo-img" src="<?php the_field('header_logo_png', 'option');?>">
+					<img class="logo-img" src="<?php the_field('header_logo_png', 'option'); ?>">
 				</picture>
 			</a>
 			<div class="hr__wrap">
@@ -98,15 +101,13 @@
 			</div>
 		</div>
 	</div>
-	<div class="main-menu">
-
+<!--	<div class="main-menu">-->
 		<div class="hamburger-icon" id="icon">
 			<div class="icon-1" id="a"></div>
 			<div class="icon-2" id="b"></div>
 			<div class="icon-3" id="c"></div>
 			<div class="clear"></div>
 		</div>
-
 		<nav id="nav" class="header_nav" aria-details="navigation">
 			<ul class="menu menu-main">
 				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/">Главная</a></li>
@@ -133,12 +134,10 @@
 				<li class="menu__item scalable"><a class="menu__link punkt-menu" href="/contact/">Контакты</a></li>
 			</ul>
 		</nav>
-
 		<div class="dark-blue" id="blue"></div>
-
-	</div>
+<!--	</div>-->
 	<div class="mask" role="dialog"></div>
 	<div class="modalW" id="modalW">
-    <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
+        <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
 	</div>
 </header>

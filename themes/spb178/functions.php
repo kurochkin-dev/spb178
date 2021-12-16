@@ -1,17 +1,10 @@
 <?php
 
-if( function_exists('acf_add_options_page') ) {
-    $args = array(
-        'page_title' => 'Параметры',
-        'menu_title' => '',
-        'menu_slug' => 'Options',
-        'post_id' => 'options',
-    );
-    acf_add_options_page( $args );
-}
 
-add_filter( 'wpcf7_autop_or_not', '__return_false' );
+//удаление тегов <br> в формах contacts form 7
+add_filter('wpcf7_autop_or_not', '__return_false');
 
+//Регистрация кастомных полей для видео
 add_action('acf/register_fields', 'my_register_fields');
 
 function my_register_fields()
@@ -19,14 +12,13 @@ function my_register_fields()
     include_once('../../plugins/acf-field-video-master/acf-video.php');
 }
 
-
+//Регистрация jquery и далее вниз стилей и скриптов для разных страниц для корректного отображения
 add_action('wp_enqueue_scripts', 'include_custom_jquery');
 function include_custom_jquery()
 {
     wp_deregister_script('jquery');
     wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery-3.4.1.min.js', array(), '3.4.1', false);
 }
-
 
 add_action('wp_enqueue_scripts', 'enqueue_load_fa');
 function enqueue_load_fa()
@@ -44,7 +36,6 @@ function script_for_service()
         wp_enqueue_script('animate-fx', get_template_directory_uri() . '/assets/js/animatefx.js', array('jquery'), null, true);
         wp_enqueue_script('new_script_three', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
         wp_enqueue_script('new_script_one', get_template_directory_uri() . '/assets/js/app.min.js', array('jquery'), null, true);
-
         wp_enqueue_style('style-name', get_stylesheet_uri());
 
     }
@@ -62,7 +53,6 @@ function script_for_allowance()
         wp_enqueue_script('new_script_seven', get_template_directory_uri() . '/assets/js/phone.js', array('jquery'), null, false);
         wp_enqueue_script('new_script_four', get_template_directory_uri() . '/assets/js/mask.js', array('jquery'), null, false);
     }
-
 }
 
 add_action('wp_enqueue_scripts', 'script_for_vacancies');
@@ -71,7 +61,6 @@ function script_for_vacancies()
     if (is_page_template('page-vacancies.php')) {
         wp_enqueue_style('vacancii', get_template_directory_uri() . '/assets/css/vacancies.css', array());
         wp_enqueue_style('vacancii-two', get_template_directory_uri() . '/assets/css/vakancii.css', array(), null, true);
-
     }
 }
 
@@ -81,7 +70,6 @@ function script_for_contacts()
     if (is_page_template('page-contacts.php')) {
         wp_enqueue_style('contact', get_template_directory_uri() . '/assets/css/contact.css', array());
         wp_enqueue_script('new_script_one', get_template_directory_uri() . '/assets/js/app.min.js', array('jquery'));
-
     }
 }
 
@@ -112,25 +100,35 @@ function theme_name_scripts()
 }
 
 //Вывод кастомных полей для header-home.php и footer-home.php в админку acfpro
-if( function_exists('acf_add_options_page') ) {
+if (function_exists('acf_add_options_page')) {
+    $args = array(
+        'page_title' => 'Параметры',
+        'menu_title' => '',
+        'menu_slug' => 'Options',
+        'post_id' => 'options',
+    );
+    acf_add_options_page($args);
+}
+
+if (function_exists('acf_add_options_page')) {
 
     acf_add_options_page(array(
-        'page_title' 	=> 'Общие настройки темы',
-        'menu_title'	=> 'Настройки темы',
-        'menu_slug' 	=> 'theme-general-settings',
-        'capability'	=> 'edit_posts',
-        'redirect'		=> false
+        'page_title' => 'Общие настройки темы',
+        'menu_title' => 'Настройки темы',
+        'menu_slug' => 'theme-general-settings',
+        'capability' => 'edit_posts',
+        'redirect' => false
     ));
 
     acf_add_options_sub_page(array(
-        'page_title' 	=> 'Настройки шапки темы',
-        'menu_title'	=> 'Шапка',
-        'parent_slug'	=> 'theme-general-settings',
+        'page_title' => 'Настройки шапки темы',
+        'menu_title' => 'Шапка',
+        'parent_slug' => 'theme-general-settings',
     ));
 
     acf_add_options_sub_page(array(
-        'page_title' 	=> 'Настройки подвала темы',
-        'menu_title'	=> 'Подвал',
-        'parent_slug'	=> 'theme-general-settings',
+        'page_title' => 'Настройки подвала темы',
+        'menu_title' => 'Подвал',
+        'parent_slug' => 'theme-general-settings',
     ));
 }
