@@ -163,6 +163,7 @@ input {
 .wpcf7-acceptance input[type=checkbox]:checked + span:before {
 	background: #ee6a09;
 }
+
 .wpcf7-acceptance input[type=checkbox]:checked + span:after {
 	visibility: visible;
 }
@@ -252,6 +253,114 @@ input {
 	opacity: 1
 }
 
+.showV {
+	visibility: visible;
+	opacity: 0;
+}
+
+.maskV {
+	opacity: 0;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 28.5%;
+	height: 37%;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 4;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: 0.7s;
+	-o-transition: 0.7s;
+	transition: 0.7s;
+	cursor: pointer;
+}
+
+.showV + .modalV {
+	visibility: visible;
+	opacity: 1;
+}
+.modalV {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	max-width: 25%;
+	background: black;
+	color: white;
+	z-index: 5;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: 0.5s ease-out;
+	-o-transition: 0.5s ease-out;
+	transition: 0.5s ease-out;
+	border-radius: 0.2rem;
+	border: 1px solid silver;
+}
+
+.video {
+	position: relative;
+	width: 100%;
+	padding-bottom: 56.25%;
+	background-color: #000000;
+	margin-bottom: 10px;
+}
+
+.video__media {
+	opacity: .5;
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.video__button {
+	position: absolute;
+	top: 49%;
+	left: 49%;
+	padding: 0;
+	border: none;
+	opacity: .5;
+	background-color: transparent;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	outline: none;
+}
+
+.video__button-icon {
+	fill: #ffffff;
+	cursor: pointer;
+}
+
+.modalV h2 {
+	opacity: .5;
+	font-size: 18px;
+	text-align: center;
+	margin: 10px 15px;
+}
+
+.video__button-shape {
+	fill: #212121;
+	fill-opacity: 0.8;
+	cursor: pointer;
+}
+
+.video:hover .video__button-shape {
+	fill-opacity: 1;
+	fill: #FF0000;
+}
+
+
+
+
+svg {
+	-webkit-transition: fill 120ms ease-in-out;
+	-o-transition: fill 120ms ease-in-out;
+	transition: fill 120ms ease-in-out;
+	fill: currentColor;
+}
+
 .modal__submit {
 	position: relative;
 	display: inline-block;
@@ -293,7 +402,7 @@ input {
 }
 
 div.wpcf7-response-output, div.wpcf7-validation-errors {
-	display: none !important;
+	color: #FFFFFF;
 }
 
 .modal_mail, .modal_text {
@@ -340,6 +449,7 @@ input[aria-invalid="true"], select[aria-invalid="true"] {
 	align-items: flex-start;
 	padding: 30px 15px 20px 15px;
 }
+
 .ceo-message__container {
 	margin: 0 auto;
 	width: 70%;
@@ -360,14 +470,14 @@ input[aria-invalid="true"], select[aria-invalid="true"] {
 .ceo-message__close-btn {
 	position: absolute;
 	top: 10%;
-	right: 1%;
+	right: 5%;
 	background: #F9923E;
 	text-align: center;
 	border: none;
 }
 
 .ceo-close {
-	margin: 0!important;
+	margin: 0 !important;
 }
 
 .ceo-message__img-wrap {

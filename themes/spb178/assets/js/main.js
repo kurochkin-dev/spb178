@@ -57,7 +57,6 @@ blue.addEventListener('touchstart', function () {
 });
 
 if (document.documentElement.clientWidth > 879) {
-
     /* Show Submenu */
     setTimeout(function () {
             $('#subnav').show(2000);
@@ -71,7 +70,6 @@ $('#blue, html, body, .dark-blue.slide').click(function () {
     hideMenu();
 });
 
-
 function hideMenu() {
     $('.submenu').slideUp(400);
 }
@@ -79,7 +77,6 @@ function hideMenu() {
 function showMenu() {
     $('.submenu').slideDown(400);
 }
-
 
 $(document).ready(function () {
     $("#uslugi").on("mouseover", showMenu);
@@ -147,11 +144,17 @@ let modalWClose = document.querySelector("#close, .close");
 let vacancyModal = document.querySelector("#contacts-right-column");
 let vacancyBtn = document.querySelector("#vacancy-btn");
 
+
+
+
+
 if (modalWClose) {
     modalWClose.addEventListener("click", () => {
+
         mask.classList.remove("active");
         mask.classList.remove("show")
         modalW.classList.remove("active");
+
     });
 }
 
@@ -217,20 +220,16 @@ vacancySlide.forEach(e => e.addEventListener("click", function (e) {
 
 round.forEach(e => e.addEventListener("click", function (e) {
     e.stopPropagation();
-    console.log('sdfsdf');
     mask.classList.add("active");
     vacancyModal.classList.add("active");
     vacancyBtn.classList.add("active");
 }));
 
 document.addEventListener( 'wpcf7submit', function( event ) {
-    alert( "Ваша заявка успешно отправлена!" );
-    if (rightColumn) {
-        rightColumn.classList.remove("active");
-    }
-    modalW.classList.remove("active");
-}, false );
+    // $('#modalW').removeClass('active');
+    $('.mask').removeClass('active, show');
 
+}, false );
 
 $("#customCheck").on("change", function () {
     $("#customCheck").prop("checked") ? $("#submit").attr("disabled", !1).addClass("active") : $("#submit").attr("disabled", !0).removeClass("active")

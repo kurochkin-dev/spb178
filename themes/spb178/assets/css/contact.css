@@ -337,17 +337,16 @@ button p {
         font-size: 10px
     }
 
-    .main .offer {
+    .offer {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         width: 260px;
-        /*margin-top: 0*/
     }
 
-    .main .offer p:nth-child(2) a:last-child {
+    .offer p:nth-child(2) a:last-child {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -374,6 +373,19 @@ button p {
     .container .submenu {
         left: -4vw
     }
+}
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+
+
+    .offer {
+        margin: 0;
+    }
+
+    .offer p:nth-child(2) a:last-child {
+        margin: 0;
+    }
+
 }
 
 @media screen and (max-width: 414px) and (orientation: portrait) {

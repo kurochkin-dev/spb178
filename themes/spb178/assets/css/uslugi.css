@@ -396,9 +396,12 @@ a {
     max-width: 100%;
     width: 148px;
     height: 148px;
-    margin: 0 5px;
     -o-object-fit:cover;
     object-fit:cover;
+}
+
+.gallery-link {
+    padding: 5px;
 }
 
 .gallery-image {

@@ -40,9 +40,12 @@ get_header();
 					<li class="menu__item scalable mr-20">
 						<a class="menu__link" id="uslugi" href="/service/">Услуги <i class="fa fa-angle-down"></i></a>
 						<ul class="submenu contacts__submenu">
-							<li><a class="contacts-submenu__link" href="/service/construction-work/">Строительные работы</a></li>
-							<li><a class="contacts-submenu__link" href="/service/visotnie-raboti/">Высотные работы</a></li>
-							<li><a class="contacts-submenu__link" href="/service/vnutrennii_remontnie_raboti/">Внутренние ремонтные работы</a></li>
+							<li><a class="contacts-submenu__link" href="/service/construction-work/">Строительные
+									работы</a></li>
+							<li><a class="contacts-submenu__link" href="/service/visotnie-raboti/">Высотные работы</a>
+							</li>
+							<li><a class="contacts-submenu__link" href="/service/vnutrennii_remontnie_raboti/">Внутренние
+									ремонтные работы</a></li>
 							<li><a class="contacts-submenu__link" href="/service/facade/">Фасадные работы</a></li>
 							<li><a class="contacts-submenu__link" href="/service/roof/">Кровельные работы</a></li>
 							<li><a class="contacts-submenu__link" href="/service/snow/">Очистка от снега</a></li>
@@ -70,13 +73,16 @@ get_header();
 
 				<!-- Offers part -->
 				<div class="offer contacts__offer">
-					<p><b>Наш адрес:</b> <a class="contacts-address__link" href="https://yandex.ru/maps/-/CKq0V4zU" rel="nofollow"
+					<p><b>Наш адрес:</b> <a class="contacts-address__link" href="https://yandex.ru/maps/-/CKq0V4zU"
+											rel="nofollow"
 											target="_blank"><?php the_field('contact_address'); ?></a></p>
 					<p><b>Телефоны: </b><a class="contacts-address-tel__link"
-							href="tel:<?php the_field('contact_phone_one'); ?>"><?php the_field('contact_phone_one'); ?></a>,
-						<a class="contacts-address-tel__link" href="tel:<?php the_field('contact_phone_two'); ?>"><?php the_field('contact_phone_two'); ?></a>
+										   href="tel:<?php the_field('contact_phone_one'); ?>"><?php the_field('contact_phone_one'); ?></a>,
+						<a class="contacts-address-tel__link"
+						   href="tel:<?php the_field('contact_phone_two'); ?>"><?php the_field('contact_phone_two'); ?></a>
 					</p>
-					<p><b>Email: </b><a class="contacts-address-mail__link" href="mailto:spb178.com@yandex.ru"><?php the_field('contact_mail'); ?></a></p>
+					<p><b>Email: </b><a class="contacts-address-mail__link"
+										href="mailto:spb178.com@yandex.ru"><?php the_field('contact_mail'); ?></a></p>
 					<p class="contacts__data"><b>Время работы:</b>
 						<span><?php the_field('contact_open_hours'); ?></span></p>
 					<p class="contacts__data"><b>ИНН:</b> <span><?php the_field('contact_inn'); ?></span></p>
@@ -88,8 +94,9 @@ get_header();
 				</button>
 
 				<div class="mask" role="dialog"></div>
-                <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
-
+				<div class="modalW" id="modalW">
+                    <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
+				</div>
 				<div class="main-footer contacts-footer">
 					<div class="icon-list"><b>Мы в социальных сетях:</b>
 						<div class="icon-list-item">

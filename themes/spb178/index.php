@@ -96,7 +96,9 @@ get_header();
 			Заказать звонок
 		</button>
 		<div class="mask" role="dialog"></div>
+		<div class="modalW" id="modalW">
         <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
+		</div>
 		<div class="main-footer index-footer">
 			<div class="index-footer__list">
 				<div class="index-footer__item-wrap">

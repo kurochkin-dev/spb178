@@ -666,6 +666,47 @@
 	}
 }
 
+@media screen and (max-width: 823px) and (orientation: landscape) {
+
+	.contact-map {
+		width: 33%;
+		height: 100%;
+	}
+
+	.offer p {
+		word-wrap: break-word;
+	}
+
+	.main #btn {
+		margin-top: 10px;
+	}
+
+	.contacts-footer {
+		top: 197px;
+		left: 30%;
+	}
+
+	.main-index {
+		left: 8vw;
+	}
+
+	.main-index {
+		left: 9vw;
+		top: 8%;
+	}
+
+
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+	.contacts-footer {
+		position: absolute;
+		top: 210px;
+		left: 103%;
+	}
+
+}
+
 
 @media (max-width: 786px) {
 
@@ -726,6 +767,23 @@
 
 	.gallery-info__snow {
 		left: 14%;
+	}
+
+}
+
+@media screen and (max-width: 731px) and (orientation: landscape) {
+	.contacts-footer {
+		top: 208px;
+		left: 108%;
+	}
+
+	.main-contacts {
+		top: 11%;
+	}
+
+	.main-index {
+		top: 9%;
+		left: 9vw;
 	}
 
 }
@@ -806,11 +864,76 @@
 		font-size: 16px;
 	}
 
+	.room__block-img, .snow__block-img, .blindarea__block-img {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 }
 
 @media (max-width: 667px) {
 	.ceo-message__title-main {
 		line-height: 1.5;
+	}
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+	.main-contacts {
+		top: 5%;
+	}
+
+	.contact-map {
+		width: 33%;
+	}
+
+	.contacts-footer {
+		top: 242px;
+		left: 84%;
+	}
+}
+
+@media screen and (max-width: 653px) and (orientation: landscape) {
+	.offer p {
+		line-height: 1;
+	}
+
+	.main #btn {
+		margin-top: 0;
+	}
+
+	.contacts-footer {
+		top: 150px;
+		left: 93%;
+	}
+}
+
+
+@media screen and (max-width: 640px) and (orientation: landscape) {
+	.offer p {
+		line-height: 1.5;
+	}
+
+	.contacts-footer {
+		top: 215px;
+		left: 88%;
+	}
+
+	.contact-map {
+		display: block;
+		width: 33%;
+		height: 100%;
+	}
+
+	.main-contacts {
+		top: 13%;
+		left: 3%;
+	}
+
+	.main-index {
+		left: 10vw;
+		top: 9%;
 	}
 }
 
@@ -882,6 +1005,17 @@
 
 	.full_dop {
 		min-height: 430px;
+	}
+}
+
+@media screen and (max-width: 568px) and (orientation: landscape) {
+	.main-index {
+		left: 11vw;
+		top: 9%;
+	}
+
+	.index-footer__item-wrap {
+		padding: 3px 10px;
 	}
 }
 
@@ -1261,6 +1395,10 @@
 	#div_info_1, #div_info_2, #div_info_3 {
 		min-height: 480px;
 	}
+
+	.contacts-footer {
+		left: 2%;
+	}
 }
 
 @media (max-width: 368px) {
@@ -1315,6 +1453,10 @@
 		left: 2%;
 	}
 
+	.snow__title, .blindarea__title, .porch__title, .room__title, .cerem__title, .plumb__title {
+		font-size: 2.5em;
+	}
+
 }
 
 @media (max-width: 355px) {
@@ -1337,9 +1479,21 @@
 }
 
 @media (max-width: 332px) {
-	.full_dop {
-		min-height: 700px;
+	.facade__table td,
+	.roof__table td,
+	.snow__table td,
+	.blindarea__table td,
+	.porch__table td,
+	.room__table td,
+	.cerem__table td,
+	.plumb__table td {
+		padding: 0;
 	}
+
+	.full_dop {
+		min-height: 880px;
+	}
+
 }
 
 @media (max-width: 320px) {
@@ -1390,9 +1544,9 @@
 		left: 15%;
 	}
 
-	.container .main-footer {
-		left: 45%;
-	}
+	/*.main-footer {*/
+	/*	left: 45%;*/
+	/*}*/
 
 	.gallery-info__plumb {
 		left: -1%;
@@ -1412,5 +1566,9 @@
 
 	.ceo-message__btn {
 		width: 100%;
+	}
+
+	.main-footer {
+		left: 60%;
 	}
 }

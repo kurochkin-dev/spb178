@@ -14,7 +14,9 @@ get_header('home');
 	</button>
 </div>
 <?php the_content(); ?>
-
+<?php
+include 'video-section.php';
+?>
 <?php
 include 'price-section.php';
 ?>

@@ -65,19 +65,19 @@
 			<ul>
 				<li class="top-address-text top-address-text1" id="top-address-text1">
 					<a class="header__address" href="https://yandex.ru/maps/-/CWDm5AN3" rel="nofollow" target="_blank">
-						Санкт-Петербург, м. Пролетарская, проспект Обуховской Обороны, 199
+						<?php the_field('header_address', 'option'); ?>
 					</a>
 				</li>
 			</ul>
 		</div>
 		<div class="top-address top-address-tel top-address-text">
 			<ul class="ul-address">
-				<li><a class="header__tel" href="tel: +78124545578">+7 (812) 454-55-78</a><br></li>
-				<li><a class="header__tel" href="tel: +79219476179">+7 (921) 947-61-79</a></li>
+				<li><a class="header__tel" href="tel: +78124545578"><?php the_field('header_phone_one', 'option'); ?></a><br></li>
+				<li><a class="header__tel" href="tel: +79219476179"><?php the_field('header_phone_two', 'option'); ?></a></li>
 			</ul>
 		</div>
 		<div class="top-address top-address-none top-address-text">
-			<span><a class="header__mail" href="mailto: spb178.com@yandex.ru">spb178.com@yandex.ru</a></span>
+			<span><a class="header__mail" href="mailto: spb178.com@yandex.ru"><?php the_field('header_mail', 'option'); ?></a></span>
 		</div>
 		<div class="top-address">
 			<button id="top-button" class="top-button top-address-text modalShow">Заказать звонок</button>
@@ -88,9 +88,9 @@
 			<a href="/">
 				<picture class="logo">
 					<source
-						srcset="<?php echo get_template_directory_uri(); ?>/images/logo.webp"
+						srcset="<?php the_field('header_logo_webp', 'option');?>"
 						type="image/webp">
-					<img class="logo-img" src="<?php echo get_template_directory_uri(); ?>/images/logo.png">
+					<img class="logo-img" src="<?php the_field('header_logo_png', 'option');?>">
 				</picture>
 			</a>
 			<div class="hr__wrap">
@@ -138,5 +138,7 @@
 
 	</div>
 	<div class="mask" role="dialog"></div>
+	<div class="modalW" id="modalW">
     <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
+	</div>
 </header>

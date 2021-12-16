@@ -116,13 +116,6 @@ get_header('home');
 
 			</div>
 			<div id="contacts-right-column" class="contacts-right-column">
-				<button id="vacancy-btn" aria-label="Закрыть окно вакансии">
-					<img class="svg" src="<?php echo get_template_directory_uri(); ?>/img/icons/x-mark.svg"
-						 alt="Закрыть модальное окно">
-				</button>
-				<div class="contacts-right-column__h2">
-					<h2>Присоединяйтесь к команде<br> <span>специалистов!</span></h2>
-				</div>
                 <?php echo do_shortcode('[contact-form-7 id="47" title="Форма вакансий"]'); ?>
 			</div>
 		</div>

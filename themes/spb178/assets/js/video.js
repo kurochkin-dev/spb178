@@ -26,5 +26,5 @@ $(document).keyup(function (e) {
 
 setTimeout(function () {
         $('.maskV').addClass("showV");
-    }, 15000
+    }, 4000
 );
