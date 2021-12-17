@@ -58,13 +58,14 @@
     <?php wp_head(); ?>
 
 </head>
-
+<body <?php body_class() ?>>
 <header class="header">
 	<div class="head-address">
 		<div class="top-address top-address-adr">
 			<ul>
 				<li class="top-address-text top-address-text1">
-					<a class="header__address" href="https://yandex.ru/maps/-/CWDm5AN3" rel="nofollow" target="_blank">
+					<a class="header__address" href="https://yandex.ru/maps/-/CWDm5AN3" rel="nofollow noreferrer"
+					   target="_blank">
                         <?php the_field('header_address', 'option'); ?>
 					</a>
 				</li>
@@ -101,41 +102,42 @@
 			</div>
 		</div>
 	</div>
-<!--	<div class="main-menu">-->
-		<div class="hamburger-icon" id="icon">
-			<div class="icon-1" id="a"></div>
-			<div class="icon-2" id="b"></div>
-			<div class="icon-3" id="c"></div>
-			<div class="clear"></div>
-		</div>
-		<nav id="nav" class="header_nav" aria-details="navigation">
-			<ul class="menu menu-main">
-				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/">Главная</a></li>
-				<li class="menu__item scalable mr-20">
-					<a class="menu__link punkt-menu item-service" id="uslugi" href="/service/" style="color: #e5e5e5;">Услуги<i
-							class="fa fa-angle-down mar5"></i></a>
-					<ul class="submenu middle__submenu">
-						<li><a class="punkt-menu" href="/service/construction-work/">Строительные работы</a></li>
-						<li><a class="punkt-menu" href="/service/visotnie-raboti/">Высотные работы</a></li>
-						<li><a class="punkt-menu" href="/service/vnutrennii_remontnie_raboti">Внутренние ремонтные
-								работы</a></li>
-						<li><a class="punkt-menu" href="/service/facade/">Фасадные работы</a></li>
-						<li><a class="punkt-menu" href="/service/roof/">Кровельные работы</a></li>
-						<li><a class="punkt-menu" href="/service/snow/">Очистка от снега</a></li>
-					</ul>
-				</li>
-				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/cro/">Допуски</a></li>
-				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/video/">Видео</a></li>
-				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/about/">Отзывы</a></li>
-				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/galereya/">Галерея</a>
-				</li>
-				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/vakansii/">Вакансии</a>
-				</li>
-				<li class="menu__item scalable"><a class="menu__link punkt-menu" href="/contact/">Контакты</a></li>
-			</ul>
-		</nav>
-		<div class="dark-blue" id="blue"></div>
-<!--	</div>-->
+	<!--	<div class="main-menu">-->
+	<div class="hamburger-icon" id="icon">
+		<div class="icon-1" id="a"></div>
+		<div class="icon-2" id="b"></div>
+		<div class="icon-3" id="c"></div>
+		<div class="clear"></div>
+	</div>
+	<nav id="nav" class="header_nav" aria-details="navigation">
+        <?php wp_nav_menu(array('container' => false)); ?>
+		<!--			<ul class="menu menu-main">-->
+		<!--				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/">Главная</a></li>-->
+		<!--				<li class="menu__item scalable mr-20">-->
+		<!--					<a class="menu__link punkt-menu item-service" id="uslugi" href="/service/" style="color: #e5e5e5;">Услуги<i-->
+		<!--							class="fa fa-angle-down mar5"></i></a>-->
+		<!--					<ul class="submenu middle__submenu">-->
+		<!--						<li><a class="punkt-menu" href="/service/construction-work/">Строительные работы</a></li>-->
+		<!--						<li><a class="punkt-menu" href="/service/visotnie-raboti/">Высотные работы</a></li>-->
+		<!--						<li><a class="punkt-menu" href="/service/vnutrennii_remontnie_raboti">Внутренние ремонтные-->
+		<!--								работы</a></li>-->
+		<!--						<li><a class="punkt-menu" href="/service/facade/">Фасадные работы</a></li>-->
+		<!--						<li><a class="punkt-menu" href="/service/roof/">Кровельные работы</a></li>-->
+		<!--						<li><a class="punkt-menu" href="/service/snow/">Очистка от снега</a></li>-->
+		<!--					</ul>-->
+		<!--				</li>-->
+		<!--				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/cro/">Допуски</a></li>-->
+		<!--				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/video/">Видео</a></li>-->
+		<!--				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/about/">Отзывы</a></li>-->
+		<!--				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/galereya/">Галерея</a>-->
+		<!--				</li>-->
+		<!--				<li class="menu__item scalable mr-20"><a class="menu__link punkt-menu" href="/vakansii/">Вакансии</a>-->
+		<!--				</li>-->
+		<!--				<li class="menu__item scalable"><a class="menu__link punkt-menu" href="/contact/">Контакты</a></li>-->
+		<!--			</ul>-->
+	</nav>
+	<div class="dark-blue" id="blue"></div>
+	<!--	</div>-->
 	<div class="mask" role="dialog"></div>
 	<div class="modalW" id="modalW">
         <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>

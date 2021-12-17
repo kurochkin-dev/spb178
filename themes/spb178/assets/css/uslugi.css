@@ -412,7 +412,15 @@ a {
     object-fit:cover;
 }
 
-.punkt-menu {
+.page-id-15 .menu-item a {
+    font-weight: 400;
+}
+
+.home .menu-item a {
+    font-weight: 400;
+}
+
+.menu-item {
     color: #e5e5e5;
     font-weight: 600;
     cursor: pointer;

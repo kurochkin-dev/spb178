@@ -6,7 +6,7 @@
     -webkit-text-fill-color: transparent
 }
 
-.mr-20 {
+.menu-item {
     margin-right: 20px
 }
 
@@ -21,7 +21,7 @@
     height: 100vh
 }
 
-.container .submenu {
+.container .sub-menu {
     background: 0 0
 }
 
@@ -314,7 +314,7 @@ button p {
         font-size: 14px
     }
 
-    .container .submenu {
+    .container .sub-menu {
         background: #000;
         left: -6.5vw
     }
@@ -370,7 +370,7 @@ button p {
 }
 
 @media screen and (max-width: 736px) and (orientation: landscape) {
-    .container .submenu {
+    .container .sub-menu {
         left: -4vw
     }
 }
@@ -415,7 +415,7 @@ button p {
         text-shadow: #000 1px 1px 0
     }
 
-    .container .submenu {
+    .container .sub-menu {
         background: #000;
         top: 6vh;
         left: -11vw

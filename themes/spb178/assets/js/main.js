@@ -71,11 +71,11 @@ $('#blue, html, body, .dark-blue.slide').click(function () {
 });
 
 function hideMenu() {
-    $('.submenu').slideUp(400);
+    $('.sub-menu').slideUp(400);
 }
 
 function showMenu() {
-    $('.submenu').slideDown(400);
+    $('.sub-menu').slideDown(400);
 }
 
 $(document).ready(function () {

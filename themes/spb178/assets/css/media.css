@@ -113,10 +113,7 @@
 	.gallery-info__facade {
 		left: 39%;
 	}
-
-
 }
-
 
 @media (max-width: 1260px) {
 	.price {
@@ -149,15 +146,12 @@
 	.price-btn__wrap {
 		margin-top: 20px;
 	}
-
-
 }
 
 @media (max-width: 1214px) {
 	.round {
 		left: 42%;
 	}
-
 }
 
 @media (max-width: 1200px) {
@@ -348,8 +342,15 @@
 
 }
 
-
 @media (max-width: 878px) {
+	.menu-item-has-children > a:after {
+		left: 80px;
+		bottom: 23px;
+	}
+
+	.header {
+		position: static;
+	}
 
 	.main-contacts {
 		position: absolute;
@@ -364,22 +365,22 @@
 		margin-left: 50px;
 	}
 
-	.submenu {
+	.sub-menu {
 		background: #000000;
 		z-index: 100;
 	}
 
-	.submenu li {
+	.sub-menu li {
 		padding: 5px;
 	}
 
 	/*стили для гамбургер меню*/
-	.menu__item #uslugi {
+	.menu-item #uslugi {
 		font-size: 14px;
 		color: #FFFFFF;
 	}
 
-	.menu__item {
+	.menu-item {
 		padding: 10px 5px;
 	}
 
@@ -397,7 +398,7 @@
 		z-index: unset;
 	}
 
-	.menu .submenu {
+	.menu .sub-menu {
 		position: static;
 		min-width: 285px;
 		background: #0c0c0c;
@@ -419,12 +420,12 @@
 		border: 1px solid #FFC300;
 	}
 
-	.container .submenu {
+	.container .sub-menu {
 		position: static;
 		transform: translateX(-50px);
 	}
 
-	.submenu li a {
+	.sub-menu li a {
 		margin: 4px;
 		font-size: 12px;
 	}
@@ -673,6 +674,9 @@
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
+	.hamburger-icon {
+		top: 125px;
+	}
 
 	.contact-map {
 		width: 33%;
@@ -744,7 +748,7 @@
 @media (max-width: 768px) {
 
 	.hamburger-icon {
-		top: 95px;
+		top: 135px;
 	}
 
 	.round {
@@ -1015,6 +1019,9 @@
 }
 
 @media screen and (max-width: 568px) and (orientation: landscape) {
+	.hamburger-icon {
+		top: 120px;
+	}
 	.main-index {
 		left: 11vw;
 		top: 9%;
@@ -1048,6 +1055,10 @@
 }
 
 @media (max-width: 540px) {
+	.hamburger-icon {
+		top: 118px;
+	}
+
 	.round {
 		left: 32%;
 	}
@@ -1201,6 +1212,9 @@
 }
 
 @media (max-width: 414px) {
+	.hamburger-icon {
+		top: 128px;
+	}
 
 	.index-menu {
 		text-align: left;
@@ -1214,7 +1228,7 @@
 		text-align: left;
 	}
 
-	.submenu li {
+	.sub-menu li {
 		display: block;
 	}
 
@@ -1328,7 +1342,7 @@
 	}
 
 	.hamburger-icon {
-		top: 82px;
+		top: 127px;
 	}
 
 	.full_dop {
@@ -1365,6 +1379,9 @@
 }
 
 @media (max-width: 375px) {
+	.hamburger-icon {
+		top: 138px;
+	}
 
 	.round {
 		left: 24%;
@@ -1417,7 +1434,7 @@
 	}
 
 	.hamburger-icon {
-		top: 89px;
+		top: 143px;
 	}
 
 	.img-container-hight {
@@ -1426,6 +1443,10 @@
 }
 
 @media (max-width: 360px) {
+	.hamburger-icon {
+		top: 133px;
+	}
+
 	.header_nav {
 		margin-top: -3px;
 		height: 35px;
@@ -1504,10 +1525,14 @@
 
 @media (max-width: 320px) {
 	.head-address {
-		height: 79px;
+		height: 85px;
 	}
 
-	.container .submenu {
+	.hamburger-icon {
+		top: 143px;
+	}
+
+	.container .sub-menu {
 		transform: translateX(-60px);
 	}
 
@@ -1546,6 +1571,9 @@
 }
 
 @media (max-width: 280px) {
+	.hamburger-icon {
+		top: 141px;
+	}
 	.round {
 		left: 15%;
 	}
@@ -1563,10 +1591,6 @@
 
 	.offer p {
 		width: unset;
-	}
-
-	.hamburger-icon {
-		top: 14vh;
 	}
 
 	.ceo-message__btn {

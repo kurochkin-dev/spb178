@@ -6,7 +6,7 @@
 	height: 0
 }
 
-.mr-20 {
+.menu-item {
 	margin-right: 20px
 }
 
@@ -16,7 +16,7 @@
 	font-size: 16px !important;
 }
 
-.menu__link {
+.menu-item a {
 	color: #FFFFFF;
 }
 
@@ -33,9 +33,12 @@
 }
 
 #subnav ul {
-	display: table;
+	display: flex;
 	padding: 10vh 0;
-	margin: 0 auto
+	margin: 0 auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #subnav ul a {
@@ -116,7 +119,7 @@
 	padding: 5px 10px;
 }
 
-.container .submenu {
+.container .sub-menu {
 	position: absolute;
 	top: 100%;
 	left: 0;
@@ -168,9 +171,6 @@ li {
 	cursor: pointer
 }
 
-.sro-container {
-	background: #000000;
-}
 
 .sro-container {
 	padding-top: 200px;
@@ -182,6 +182,7 @@ li {
 	display: -ms-flexbox;
 	display: flex;
 	min-height: 505px;
+	background: #000000;
 }
 
 .sro-row {
@@ -367,13 +368,21 @@ ul {
 	left: 0
 }
 
-#uslugi {
+.menu-item-has-children > a {
 	color: #e5e5e5
 }
 
-.punkt-menu.item-service {
+.home .menu-item-has-children > a {
+	color: #F88F20;
+}
+
+.page-id-15 .menu-item-has-children > a {
+	color: rgb(242, 201, 0);
+}
+
+.menu-item-has-children > a {
 	font-size: 16px;
-	color: rgb(242, 201, 0) !important;
+	color: rgb(242, 201, 0);
 	font-weight: 600;
 	cursor: pointer;
 
@@ -383,13 +392,13 @@ li.social-contacts {
 	list-style: none;
 }
 
-.menu__item {
+.menu-item {
 	-webkit-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 }
 
-.menu__item:hover {
+.menu-item:hover {
 	-webkit-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
@@ -399,7 +408,7 @@ li.social-contacts {
 	transform: scale(1.1);
 }
 
-.punkt-menu {
+.menu-item a {
 	color: #e5e5e5;
 	font-size: 16px;
 	font-weight: 600;
@@ -410,7 +419,7 @@ li.social-contacts {
 	white-space: nowrap;
 }
 
-.punkt-menu:hover {
+.menu-item a:hover {
 	-webkit-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
@@ -632,7 +641,7 @@ i.fa {
 		right: 0
 	}
 
-	.container .submenu {
+	.container .sub-menu {
 		margin-top: 0
 	}
 
@@ -708,7 +717,7 @@ i.fa {
 		display: none
 	}
 
-	.mr-20 {
+	.menu-item {
 		margin-right: 15px
 	}
 }

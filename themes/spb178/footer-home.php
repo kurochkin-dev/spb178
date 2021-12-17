@@ -27,7 +27,7 @@
 	<div class="footer_block top-block block_bot_4">
 		<ul class="footer__list footer__list--address">
 			<li><b>Наш адрес:</b><br> <a class="link href_footer" href="https://yandex.ru/maps/-/CWDm5AN3"
-										 rel="nofollow" target="_blank"><?php the_field('footer_address', 'option'); ?></a></li>
+										 rel="nofollow noreferrer" target="_blank"><?php the_field('footer_address', 'option'); ?></a></li>
 			<li><b>Телефоны:</b><br><a class="link href_footer" href="tel: +78124545578"><?php the_field('footer_phone_one', 'option');?></a><br>
 				<a class="link href_footer" href="tel: +79219476179"><?php the_field('footer_phone_two', 'option');?></a>
 			</li>
@@ -40,13 +40,13 @@
 		<div class="footer__list footer__list--social">
 			<span><b>Мы в социальных сетях:</b></span>
 			<div class="footer__block-wrap">
-				<a href="https://vk.com/stroysnab178" rel="nofollow" target="_blank">
+				<a href="https://vk.com/stroysnab178" rel="nofollow noreferrer" target="_blank">
 					<i class="fab fa-vk" aria-hidden="true"></i>
 				</a>
-				<a href="https://www.instagram.com/stroysnab.spb" rel="nofollow" target="_blank">
+				<a href="https://www.instagram.com/stroysnab.spb" rel="nofollow noreferrer" target="_blank">
 					<i class="fab fa-instagram" aria-hidden="true"></i>
 				</a>
-				<a href="https://www.youtube.com/channel/UCOC4smtr4dU-yHpiWsOS7iQ" rel="nofollow" target="_blank">
+				<a href="https://www.youtube.com/channel/UCOC4smtr4dU-yHpiWsOS7iQ" rel="nofollow noreferrer" target="_blank">
 					<i class="fab fa-youtube" aria-hidden="true"></i>
 				</a>
 			</div>
