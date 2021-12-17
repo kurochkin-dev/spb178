@@ -374,6 +374,23 @@
 		padding: 5px;
 	}
 
+	.sro-container,
+	.video__container,
+	.feedback,
+	.ceo-message__wrap,
+	.about, .img-container, .roof-container {
+		padding-top: 0;
+	}
+
+	.img-container {
+		padding-bottom: 120px;
+	}
+
+	.big-foto {
+		margin-top: 0;
+		padding-top: 0;
+	}
+
 	/*стили для гамбургер меню*/
 	.menu-item #uslugi {
 		font-size: 14px;
@@ -675,7 +692,7 @@
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
 	.hamburger-icon {
-		top: 125px;
+		top: 93px;
 	}
 
 	.contact-map {
@@ -705,6 +722,9 @@
 		top: 8%;
 	}
 
+	.img-container-hight {
+		padding: 0;
+	}
 
 }
 
@@ -748,7 +768,7 @@
 @media (max-width: 768px) {
 
 	.hamburger-icon {
-		top: 135px;
+		top: 94px;
 	}
 
 	.round {
@@ -960,7 +980,7 @@
 	}
 
 	.img-container-hight {
-		padding: 250px 0;
+		/*padding: 250px 0;*/
 	}
 
 }
@@ -986,22 +1006,11 @@
 		margin: 15px;
 	}
 
-	.img-container-hight {
-		padding: 250px 0;
-	}
 
 }
 
 @media (max-width: 586px) {
 	.container__policy {
-		padding-top: 150px;
-	}
-
-	.video__container {
-		padding-top: 150px;
-	}
-
-	.feedback {
 		padding-top: 150px;
 	}
 
@@ -1020,7 +1029,7 @@
 
 @media screen and (max-width: 568px) and (orientation: landscape) {
 	.hamburger-icon {
-		top: 120px;
+		top: 74px;
 	}
 	.main-index {
 		left: 11vw;
@@ -1055,9 +1064,9 @@
 }
 
 @media (max-width: 540px) {
-	.hamburger-icon {
-		top: 118px;
-	}
+	/*.hamburger-icon {*/
+	/*	top: 118px;*/
+	/*}*/
 
 	.round {
 		left: 32%;
@@ -1095,8 +1104,8 @@
 @media (max-width: 528px) {
 
 	.img-container-hight {
-		padding: 200px 0;
 		background-position: bottom;
+		padding: 0;
 	}
 
 	.phone-number, .time-hours, .mail__address, .address__map {
@@ -1136,6 +1145,10 @@
 @media (max-width: 490px) {
 	#div_info_1, #div_info_2, #div_info_3 {
 		min-height: 460px;
+	}
+
+	.img-container-hight {
+		height: 100%;
 	}
 }
 
@@ -1213,7 +1226,7 @@
 
 @media (max-width: 414px) {
 	.hamburger-icon {
-		top: 128px;
+		top: 80px;
 	}
 
 	.index-menu {
@@ -1342,7 +1355,7 @@
 	}
 
 	.hamburger-icon {
-		top: 127px;
+		top: 82px;
 	}
 
 	.full_dop {
@@ -1380,7 +1393,7 @@
 
 @media (max-width: 375px) {
 	.hamburger-icon {
-		top: 138px;
+		top: 92px;
 	}
 
 	.round {
@@ -1434,7 +1447,7 @@
 	}
 
 	.hamburger-icon {
-		top: 143px;
+		top: 88px;
 	}
 
 	.img-container-hight {
@@ -1443,9 +1456,7 @@
 }
 
 @media (max-width: 360px) {
-	.hamburger-icon {
-		top: 133px;
-	}
+
 
 	.header_nav {
 		margin-top: -3px;
@@ -1529,7 +1540,7 @@
 	}
 
 	.hamburger-icon {
-		top: 143px;
+		top: 98px;
 	}
 
 	.container .sub-menu {
@@ -1572,7 +1583,7 @@
 
 @media (max-width: 280px) {
 	.hamburger-icon {
-		top: 141px;
+		top: 96px;
 	}
 	.round {
 		left: 15%;

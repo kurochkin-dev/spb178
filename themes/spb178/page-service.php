@@ -6,7 +6,7 @@ Template Name: Услуги
 <?php
 get_header('home');
 ?>
-	<div class="big-foto"><img alt="Услуги" style="margin-top: 180px;" class="big-foto"
+	<div class="big-foto"><img alt="Услуги" class="big-foto"
 							   src="<?php the_field('service_image'); ?>"></div>
 	<div class="container">
         <?php if (have_rows('service_cards')): ?>

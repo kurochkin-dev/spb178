@@ -337,6 +337,7 @@ a {
 	margin-right: auto;
 	width: 800px;
 	height: 500px;
+	padding-top: 100px;
 }
 
 .content {
@@ -1098,6 +1099,7 @@ a {
 
 .facade__text, .roof__text, .snow__text, .blindarea__text, .porch__text, .room__text, .cerem__text, .plumb__text {
 	line-height: 19px;
+	margin-left: 15px;
 }
 
 .facade__text {

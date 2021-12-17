@@ -79,22 +79,22 @@ function showMenu() {
 }
 
 $(document).ready(function () {
-    $("#uslugi").on("mouseover", showMenu);
-    $(".menu-main").on("mouseleave", hideMenu);
+    $(".menu-item-has-children > a").on("mouseover", showMenu);
+    $(".menu").on("mouseleave", hideMenu);
 });
 
 
 if (window.innerWidth < 878) {
-    $('#uslugi').one("click", false);
+    $('.menu-item-has-children > a').one("click", false);
     $(document).ready(function () {
-        $('#uslugi').on('touchstart', function (e) {
+        $('.menu-item-has-children > a').on('touchstart', function (e) {
             showMenu();
         });
     });
 }
 
 
-$("#uslugi").hover(function () {
+$(".menu-item-has-children > a").hover(function () {
         $("#subnav").hide();
     }, function () {
         $("#subnav").delay(19000).show(1000);
