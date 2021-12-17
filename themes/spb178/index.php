@@ -50,42 +50,6 @@ get_header();
 				<li><a class="service-item" href="/service/snow/">Очистка от снега</a></li>
 			</ul>
 		</div>
-<!--		<ul class="menu index-menu">-->
-<!--			<li class="menu__item mr-20"><span class="menu__link">Главная</span></li>-->
-<!--			<li class="menu__item scalable mr-20">-->
-<!--				<a id="uslugi" href="/service/" class="menu__link mr-22">Услуги <i class="fa fa-angle-down"></i></a>-->
-<!--				<ul class="submenu index__submenu">-->
-<!--					<li class="submenu__item"><a class="submenu__link" href="/service/construction-work/">Строительные-->
-<!--							работы</a></li>-->
-<!--					<li class="submenu__item"><a class="submenu__link" href="/service/visotnie-raboti/">Высотные-->
-<!--							работы</a></li>-->
-<!--					<li class="submenu__item"><a class="submenu__link" href="/service/vnutrennii_remontnie_raboti/">Внутренние-->
-<!--							ремонтные работы</a></li>-->
-<!--					<li class="submenu__item"><a class="submenu__link" href="/service/facade/">Фасадные работы</a></li>-->
-<!--					<li class="submenu__item"><a class="submenu__link" href="/service/roof/">Кровельные работы</a></li>-->
-<!--					<li class="submenu__item"><a class="submenu__link" href="/service/snow/">Очистка от снега</a></li>-->
-<!--				</ul>-->
-<!--			</li>-->
-<!--			<li class="menu__item scalable mr-20"><a class="menu__link" href="/cro/">Допуски</a></li>-->
-<!--			<li class="menu__item scalable mr-20"><a class="menu__link" href="/video/">Видео</a></li>-->
-<!--			<li class="menu__item scalable mr-20"><a class="menu__link" href="/about/">Отзывы</a></li>-->
-<!--			<li class="menu__item scalable mr-20"><a class="menu__link" href="/galereya/">Галерея</a></li>-->
-<!--			<li class="menu__item scalable mr-20"><a class="menu__link" href="/vakansii/">Вакансии</a></li>-->
-<!--			<li class="menu__item scalable"><a class="menu__link" href="/contact/">Контакты</a></li>-->
-<!--			<div id="subnav">-->
-<!--				<img class="subnav__img" src="--><?php //bloginfo('template_directory'); ?><!--/images/bg_for_subnav_reverce.png"-->
-<!--					 alt="">-->
-<!--				<ul class="subnav__list">-->
-<!--					<li><a class="service-item" href="/service/construction-work/">Строительные работы</a></li>-->
-<!--					<li><a class="service-item" href="/service/visotnie-raboti/">Высотные работы</a></li>-->
-<!--					<li><a class="service-item" href="/service/vnutrennii_remontnie_raboti/">Внутренние ремонтные-->
-<!--							работы</a></li>-->
-<!--					<li><a class="service-item" href="/service/facade/">Фасадные работы</a></li>-->
-<!--					<li><a class="service-item" href="/service/roof/">Кровельные работы</a></li>-->
-<!--					<li><a class="service-item" href="/service/snow/">Очистка от снега</a></li>-->
-<!--				</ul>-->
-<!--			</div>-->
-<!--		</ul>-->
 	</nav>
 
 	<div class="dark-blue" id="blue"></div>
@@ -111,7 +75,7 @@ get_header();
 		</button>
 		<div class="mask" role="dialog"></div>
 		<div class="modalW" id="modalW">
-        <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
+            <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
 		</div>
 		<div class="main-footer index-footer">
 			<div class="index-footer__list">

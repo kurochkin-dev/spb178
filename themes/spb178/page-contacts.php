@@ -36,28 +36,6 @@ get_header();
 
 			<nav id="nav" class="header_nav" aria-details="navigation">
                 <?php wp_nav_menu(array('container' => false)); ?>
-<!--				<ul class="menu contacts-menu">-->
-<!--					<li class="menu__item scalable mr-20"><a class="menu__link" href="/">Главная</a></li>-->
-<!--					<li class="menu__item scalable mr-20">-->
-<!--						<a class="menu__link" id="uslugi" href="/service/">Услуги <i class="fa fa-angle-down"></i></a>-->
-<!--						<ul class="submenu contacts__submenu">-->
-<!--							<li><a class="contacts-submenu__link" href="/service/construction-work/">Строительные-->
-<!--									работы</a></li>-->
-<!--							<li><a class="contacts-submenu__link" href="/service/visotnie-raboti/">Высотные работы</a>-->
-<!--							</li>-->
-<!--							<li><a class="contacts-submenu__link" href="/service/vnutrennii_remontnie_raboti/">Внутренние-->
-<!--									ремонтные работы</a></li>-->
-<!--							<li><a class="contacts-submenu__link" href="/service/facade/">Фасадные работы</a></li>-->
-<!--							<li><a class="contacts-submenu__link" href="/service/roof/">Кровельные работы</a></li>-->
-<!--							<li><a class="contacts-submenu__link" href="/service/snow/">Очистка от снега</a></li>-->
-<!--						</ul>-->
-<!--					</li>-->
-<!--					<li class="menu__item scalable mr-20"><a class="menu__link" href="/cro/">Допуски</a></li>-->
-<!--					<li class="menu__item scalable mr-20"><a class="menu__link" href="/about/">Отзывы</a></li>-->
-<!--					<li class="menu__item scalable mr-20"><a class="menu__link" href="/galereya/">Галерея</a></li>-->
-<!--					<li class="menu__item scalable mr-20"><a class="menu__link" href="/vakansii/">Вакансии</a></li>-->
-<!--					<li class="menu__item mr-20"><span class="menu__link">Контакты</span></li>-->
-<!--				</ul>-->
 			</nav>
 
 			<div class="dark-blue" id="blue"></div>
