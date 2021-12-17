@@ -13,9 +13,6 @@
 	<meta http-equiv="Cache-Control" content="no-cache"/>
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 	<meta name="format-detection" content="telephone=no">
-
-	<!--	<link href="/css/--><?php //echo $prefix; ?><!--vakancii.css" rel="stylesheet"/>-->
-
 	<script src="https://api-maps.yandex.ru/2.1/?apikey=ac441832-f13a-4b1d-9214-122da571f681&amp;lang=ru_RU"
 			type="text/javascript"></script>
 
