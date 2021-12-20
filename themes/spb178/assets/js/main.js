@@ -60,7 +60,7 @@ if (document.documentElement.clientWidth > 879) {
     /* Show Submenu */
     setTimeout(function () {
             $('#subnav').show(2000);
-            $('#uslugi').css('color', '#f2c900');
+            $('.menu-item-has-children > a').css('color', '#f2c900');
             $('.mr-22').css('color', '#f88f3b');
         }, 19000
     );

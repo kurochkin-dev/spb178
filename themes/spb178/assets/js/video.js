@@ -24,7 +24,11 @@ $(document).keyup(function (e) {
 // }, 2000
 // );
 
-setTimeout(function () {
-        $('.maskV').addClass("showV");
-    }, 4000
-);
+if (document.documentElement.clientWidth > 879) {
+    setTimeout(function () {
+            $('.maskV').addClass("showV");
+        }, 4000
+    );
+}
+
+
