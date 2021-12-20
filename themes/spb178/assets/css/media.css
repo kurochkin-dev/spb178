@@ -345,7 +345,7 @@
 @media (max-width: 878px) {
 	.menu-item-has-children > a:after {
 		left: 80px;
-		bottom: 23px;
+		bottom: 27px;
 	}
 
 	.header {
@@ -574,7 +574,7 @@
 	.menu {
 		margin: 0;
 		position: absolute;
-		top: 0;
+		top: 60%;
 		left: -300px;
 		width: 250px;
 		border-radius: 10px;
@@ -1493,6 +1493,14 @@
 
 	.snow__title, .blindarea__title, .porch__title, .room__title, .cerem__title, .plumb__title {
 		font-size: 2.5em;
+	}
+
+	.contacts-footer {
+		left: 45%;
+	}
+
+	.full_dop {
+		min-height: 780px;
 	}
 
 }
