@@ -69,13 +69,21 @@ get_header();
 			<p class="offer__desc"><?php the_field('main_desc'); ?>
 			</p>
 		</div>
-
-		<button id="btn" class="modalShow index__btn" aria-haspopup="true">
+		<button id="btn" class="modalShow index__btn" data-page-title="<?= the_title() ?>" aria-haspopup="true">
 			Заказать звонок
 		</button>
 		<div class="mask" role="dialog"></div>
 		<div class="modalW" id="modalW">
             <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
+			<script>
+                // $(document).on("ready", function () {
+                    $('#btn').click(function () {
+                        let titlePage = $(this).attr('data-page-title');
+                        $('#hidden').val(titlePage);
+                        console.log(titlePage);
+                    });
+                // });
+			</script>
 		</div>
 		<div class="main-footer index-footer">
 			<div class="index-footer__list">

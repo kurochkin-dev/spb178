@@ -1095,6 +1095,7 @@ a {
 .facade-block__title, .roof-block__title, .snow-block__title, .blindarea-block__title, .porch-block__title, .room-block__title, .cerem-block__title, .plumb-block__title {
 	font-size: 27px;
 	font-weight: 700;
+	margin-left: 15px;
 }
 
 .facade__text, .roof__text, .snow__text, .blindarea__text, .porch__text, .room__text, .cerem__text, .plumb__text {

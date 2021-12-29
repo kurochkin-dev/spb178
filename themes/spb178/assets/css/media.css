@@ -122,15 +122,14 @@
 		-ms-flex-direction: column;
 		flex-direction: column;
 		min-height: 200px;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding: 10px;
 	}
 
 	.price-polygon__wrap {
 		margin: 15px 0;
 		-webkit-clip-path: none;
 		clip-path: none;
-		width: 70%;
+		width: 100%;
 		border-radius: 10px;
 	}
 
@@ -345,7 +344,7 @@
 @media (max-width: 878px) {
 	.menu-item-has-children > a:after {
 		left: 80px;
-		bottom: 27px;
+		bottom: 17px;
 	}
 
 	.header {
@@ -398,7 +397,7 @@
 	}
 
 	.menu-item {
-		padding: 10px 5px;
+		padding: 5px 5px;
 	}
 
 	.main-menu {
@@ -413,14 +412,15 @@
 	.container .header_nav {
 		background: transparent;
 		z-index: unset;
+		top: -70px;
 	}
 
 	.menu .sub-menu {
 		position: static;
-		min-width: 285px;
+		min-width: 230px;
 		background: #0c0c0c;
 		border-radius: 5px;
-		transform: translateX(-50px);
+		transform: translateX(-15px);
 
 	}
 
@@ -574,16 +574,22 @@
 	.menu {
 		margin: 0;
 		position: absolute;
-		top: 60%;
+		top: 300%;
 		left: -300px;
 		width: 250px;
 		border-radius: 10px;
 	}
 
+
+	.menu-item-858 a {
+		hyphens: auto;
+		white-space: break-spaces;
+	}
+
 	.menu li {
 		list-style: none;
 		color: #fff;
-		line-height: 2.2;
+		/*line-height: 2.2;*/
 		text-transform: uppercase;
 		letter-spacing: 1.7px;
 	}
@@ -673,6 +679,9 @@
 		flex-direction: row;
 	}
 
+	.img-container-blindarea {
+		padding-top: 100px;
+	}
 
 }
 
@@ -688,6 +697,7 @@
 	.hamburger-icon {
 		top: 95px;
 	}
+
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
@@ -947,7 +957,7 @@
 
 	.contacts-footer {
 		top: 215px;
-		left: 88%;
+		left: 65%;
 	}
 
 	.contact-map {
@@ -1039,6 +1049,17 @@
 	.index-footer__item-wrap {
 		padding: 3px 10px;
 	}
+
+	.contacts-footer {
+		top: 82px;
+		left: 80%;
+	}
+
+	.main #btn {
+		position: absolute;
+		left: 97%;
+		top: 224px;
+	}
 }
 
 @media (max-width: 565px) {
@@ -1067,6 +1088,10 @@
 	/*.hamburger-icon {*/
 	/*	top: 118px;*/
 	/*}*/
+
+	.contacts-footer {
+		margin: 8px 0 0 0;
+	}
 
 	.round {
 		left: 32%;
@@ -1433,7 +1458,8 @@
 	}
 
 	.contacts-footer {
-		left: 2%;
+		left: 50%;
+		top: 66%;
 	}
 }
 
@@ -1595,6 +1621,10 @@
 	}
 	.round {
 		left: 15%;
+	}
+
+	.contacts-footer {
+		top: 70%;
 	}
 
 	/*.main-footer {*/

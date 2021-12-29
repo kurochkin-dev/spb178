@@ -255,7 +255,7 @@
 	color: #e5e5e5;
 	font-size: 40px;
 	font-weight: 700;
-	margin-bottom: 80px;
+	margin-bottom: 240px;
 }
 
 .contacts-column {
@@ -358,8 +358,7 @@
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	flex-flow: column;
-	top: 50%;
-	z-index: 5;
+	top: 44%;
 	left: 51%;
 	border: 1px solid #a9a9a9;
 	background-color: #000;
@@ -446,6 +445,7 @@
 	width: 95%;
 	height: 38px;
 	min-height: 100%;
+	margin: 5px 0;
 }
 
 #vacancy-btn {

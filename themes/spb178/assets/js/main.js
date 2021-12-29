@@ -515,3 +515,11 @@ $(document).on("ready", function () {
     })
 });
 //# sourceMappingURL=main.js.map
+
+
+$('#btn, .top-button').click(function () {
+    let titlePage = $(this).attr('data-page-title');
+    $('#hidden').val(titlePage);
+    console.log(titlePage);
+});
+

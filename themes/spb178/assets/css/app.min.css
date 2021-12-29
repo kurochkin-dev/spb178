@@ -143,12 +143,12 @@ li {
 	position: relative
 }
 
-.container .header_nav ul li a {
-	display: block;
-	text-decoration: none;
-	outline: 0;
-	white-space: nowrap
-}
+/*.container .header_nav ul li a {*/
+/*	display: block;*/
+/*	text-decoration: none;*/
+/*	outline: 0;*/
+/*	white-space: nowrap*/
+/*}*/
 
 .container .header_nav ul li a:hover {
 	color: #f88f3b;

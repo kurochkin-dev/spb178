@@ -8,9 +8,9 @@ get_header();
 ?>
 	<script>
         window.onload = function () {
-            setTimeout(function () {
+
                 document.getElementById('ya-map').src = 'https://yandex.ru/map-widget/v1/-/CKw3bPJC';
-            }, 1500);
+
         };
 	</script>
 	<style>
@@ -68,7 +68,7 @@ get_header();
 					<p class="contacts__data"><b>ОГРН:</b> <span><?php the_field('contact_ogrn'); ?></span></p>
 				</div>
 
-				<button id="btn" class="contacts__btn modalShow" aria-haspopup="true">
+				<button id="btn" class="contacts__btn modalShow" data-page-title="<?= the_title() ?>" aria-haspopup="true">
 					<p class="contacts__btn-name">Заказать звонок</p>
 				</button>
 

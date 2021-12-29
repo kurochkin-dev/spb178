@@ -4,6 +4,17 @@
 //удаление тегов <br> в формах contacts form 7
 add_filter('wpcf7_autop_or_not', '__return_false');
 
+//Добавление дата атрибута к полю формы
+add_filter( 'wpcf7_form_elements', 'imp_wpcf7_form_elements' );
+function imp_wpcf7_form_elements( $content ) {
+    $str_pos = strpos( $content, 'name="title"' );
+    $title = get_the_title();
+    if ( $str_pos !== false ) {
+        $content = substr_replace( $content, ' data-page-title="'. $title.'" ', $str_pos, 0 );
+    }
+    return $content;
+}
+
 //Регистрация кастомных полей для видео
 add_action('acf/register_fields', 'my_register_fields');
 
