@@ -55,7 +55,9 @@
 	<div class="footer_block footer_block_right">
 		<img class="footer_block_img" src="<?php bloginfo('template_directory'); ?>/img_menu/Dark-Background-right.png">
 	</div>
+
 </footer>
+
 <?php wp_footer(); ?>
 </body>
 </html>

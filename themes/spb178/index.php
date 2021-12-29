@@ -77,11 +77,11 @@ get_header();
             <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
 			<script>
                 // $(document).on("ready", function () {
-                    $('#btn').click(function () {
-                        let titlePage = $(this).attr('data-page-title');
-                        $('#hidden').val(titlePage);
-                        console.log(titlePage);
-                    });
+                //     $('#btn').click(function () {
+                //         let titlePage = $(this).attr('data-page-title');
+                //         $('#hidden').val(titlePage);
+                //         console.log(titlePage);
+                //     });
                 // });
 			</script>
 		</div>

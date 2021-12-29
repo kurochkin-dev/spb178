@@ -58,6 +58,7 @@
         <img class="footer-img" src="<?php bloginfo('template_directory'); ?>/img/polphyls.png" alt="Картинка для футера - ООО СтройСнаб" loading="lazy">
     </picture>
 </footer>
+
 <?php wp_footer(); ?>
 </body>
 </html>
