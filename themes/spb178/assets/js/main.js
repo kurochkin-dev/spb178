@@ -1,18 +1,5 @@
 'use strict';
 
-// document.addEventListener('DOMContentLoaded', () => {
-//
-//     window.onscroll = () => {
-//         let e = document.getElementById("header-stick");
-//         let t = document.getElementById("about");
-//         let a = e.offsetTop;
-//         window.pageYOffset >= a ? (e.classList.add("sticky"),
-//             t.classList.add("sticky")) : (e.classList.remove("sticky"),
-//             t.classList.remove("sticky"))
-//     };
-// });
-
-
 $(function () {
     var timer;
     $('.menu > li').hover(
@@ -29,7 +16,6 @@ $(function () {
             $(this).find('ul').finish().slideUp(1);
         }
     );
-
 });
 
 

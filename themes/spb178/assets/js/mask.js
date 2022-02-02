@@ -33,9 +33,3 @@ $(document).ready(function () {
 		input.addEventListener("keydown", mask, false)
 	});
 });
-
-// window.onload = function () {
-// 	setTimeout(function () {
-// 		document.getElementById('ya-map').src = 'https://yandex.ru/map-widget/v1/-/CKw3bPJC';
-// 	}, 1500);
-// };

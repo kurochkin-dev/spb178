@@ -3,10 +3,6 @@ $(".butt").on("click", function () {
     $(".maskV").addClass("showV");
 });
 
-/* Function for close modal */
-// function closeModal() {
-// 	$(".maskV").removeClass("showV");
-// }
 /* Modal close */
 $(".close, .maskV").on("click", function () {
     $(".maskV").removeClass("showV");
@@ -18,11 +14,6 @@ $(document).keyup(function (e) {
         $(".maskV").removeClass("showV");
     }
 });
-
-// setTimeout(function () { 
-// 	$('.maskV').addClass("showV");
-// }, 2000
-// );
 
 if (document.documentElement.clientWidth > 879) {
     setTimeout(function () {

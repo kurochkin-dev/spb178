@@ -43,7 +43,6 @@
 
 #subnav ul a {
 	color: #f88f3b;
-	/*font-size: 1.7vh*/
 }
 
 #subnav ul a:hover {
@@ -143,13 +142,6 @@ li {
 	position: relative
 }
 
-/*.container .header_nav ul li a {*/
-/*	display: block;*/
-/*	text-decoration: none;*/
-/*	outline: 0;*/
-/*	white-space: nowrap*/
-/*}*/
-
 .container .header_nav ul li a:hover {
 	color: #f88f3b;
 	-webkit-transition: .5s all;
@@ -192,7 +184,6 @@ li {
 
 .sro-row > a > img {
 	margin-right: 25px;
-	/*max-width: 350px;*/
 	-webkit-transition: 1s all;
 	-o-transition: 1s all;
 	transition: 1s all;

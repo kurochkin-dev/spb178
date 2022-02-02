@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WP Lightbox 2 - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-12-01 07:41:06+0000\n"
+"PO-Revision-Date: 2021-12-28 10:39:23+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,11 +41,11 @@ msgstr "Навигация по изображениям с клавиатуры
 
 #: wp-lightbox-2.php:262
 msgid "Help text (default: none) "
-msgstr "Текст справки (по умолчанию: нет)"
+msgstr "Текст справки (по умолчанию: нет) "
 
 #: wp-lightbox-2.php:256
 msgid "Animation duration (in milliseconds) "
-msgstr "Продолжительность анимации (в миллисекундах)"
+msgstr "Продолжительность анимации (в миллисекундах) "
 
 #: wp-lightbox-2.php:249
 msgid "Minimum margin to screen edge (default: 0)"
@@ -109,7 +109,7 @@ msgstr "Скачать"
 
 #: wp-lightbox-2.php:134
 msgid " of "
-msgstr "из"
+msgstr " из "
 
 #: wp-lightbox-2.php:133
 msgid "Image "
