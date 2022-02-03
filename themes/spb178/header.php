@@ -67,9 +67,7 @@
     <?php
     if (is_home()) {
         get_header();
-    } else {
-		get_header('home');
-	}
+    }
     ?>
 	<?php
     wp_head();

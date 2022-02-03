@@ -108,6 +108,15 @@ get_header();
 		</div>
 	</div>
 </div>
+
 <?php
-get_footer('anyscripts');
+if (is_front_page() || is_home()) {
+    get_footer('anyscripts');
+} else {
+    get_footer('home');
+}
 ?>
+
+<?php
+//get_footer('anyscripts');
+//?>

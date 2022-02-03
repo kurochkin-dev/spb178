@@ -62,12 +62,12 @@
 </footer>
 
 <?php
-if (is_home()) {
-    get_footer();
-} else {
-    get_footer('home');
-}
-?>
+//if (is_home()) {
+//    get_footer('anyscripts');
+//} else {
+//    get_footer('home');
+//}
+//?>
 
 <?php wp_footer(); ?>
 </body>

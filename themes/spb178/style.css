@@ -1267,7 +1267,6 @@ a {
 
 .facade-bottom__container, .snow-bottom__container, .blindarea-bottom__container, .plumb-bottom__container {
 	padding: 15px;
-	border-bottom: 1px solid #fa903c;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1326,11 +1325,19 @@ a {
 }
 
 .wrap-border {
-	width: 50%;
+	width: 100%;
 	border: 3px double #ffffff;
 }
 
+.service-line {
+	border: none;
+	color: #fa903c;
+	background: #fa903c;
+	height: 1px;
+}
+
 .roof__wrap {
+	width: 100%;
 	padding: 10px;
 }
 

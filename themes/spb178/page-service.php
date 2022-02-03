@@ -3,10 +3,11 @@
 Template Name: Услуги
 */
 ?>
-<!--SERVICE-->
-<?php
-get_header('home');
-?>
+
+<?php get_header('home'); ?>
+
+
+	<!--SERVICE-->
 	<div class="big-foto"><img alt="Услуги" class="big-foto"
 							   src="<?php the_field('service_image'); ?>"></div>
 	<div class="container">
@@ -14,7 +15,8 @@ get_header('home');
         <?php query_posts('cat=7&order=ASC');
         if (have_posts()) {
             while (have_posts()) {
-                the_post(); ?>
+                the_post();
+                ?>
 
                 <?php if (have_rows('service_cards')): ?>
                     <?php while (have_rows('service_cards')): the_row();
@@ -49,6 +51,5 @@ get_header('home');
 
 
 	</div>
-<?php
-get_footer('home');
-?>
+
+<?php get_footer('home'); ?>

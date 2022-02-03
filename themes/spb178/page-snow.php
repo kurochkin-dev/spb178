@@ -1,8 +1,4 @@
-<?php
-/*
-Template Name: Очистка кровли от снега и наледи
-*/
-?>
+
 <?php
 get_header('home');
 ?>

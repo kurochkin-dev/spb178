@@ -1,6 +1,7 @@
 <?php
-//get_header('home');
-//?>
+get_header('home');
+?>
+
 
 <div class="<?php the_field('class_image'); ?>">
 	<h1 class="construction__title title"><?php the_title(); ?></h1>
@@ -32,7 +33,6 @@
             if (have_rows('construction_modals')): ?>
 
                 <?php while (have_rows('construction_modals')): the_row();
-//                        $id = get_sub_field('construction_id');
                     $title = get_sub_field('construction_title');
                     $desc = get_sub_field('construction_p');
                     $list = get_sub_field('construction_list');
