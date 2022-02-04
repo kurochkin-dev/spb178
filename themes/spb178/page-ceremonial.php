@@ -18,7 +18,7 @@ get_header('home');
 
 
 <?php
-include 'price-section.php';
+include 'inc/price-section.php';
 ?>
 <?php
 the_field('cerem_article');

@@ -5,7 +5,7 @@ Tags: svg, vector, safesvg, safe svg, sanitization, sanitisation, sanitizer, san
 Requires at least: 4.8
 Tested up to: 6.0
 Requires PHP: 5.3
-Stable tag: 2.4
+Stable tag: 2.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -160,6 +160,8 @@ You need to add the mime type for svg and svgz to: "MLA Settings > Media Library
 
 
 == Changelog ==
+= 2.4.1 =
+* Fixed issue causing WP-CLI to break.
 
 = 2.4 =
 * NEW FEATURE: Added optional SVG sanitization.
@@ -360,6 +362,9 @@ You need to add the mime type for svg and svgz to: "MLA Settings > Media Library
 
 
 == Upgrade Notice ==
+
+= 2.4.1 =
+2.4.1 fixes broken WP-CLI. Now featuring optional SVG sanitization and ability to target nested SVGs! This update contains a lot, please BACKUP YOUR DATABASE AND FILES BEFORE UPDATING!
 
 = 2.4 =
 Now featuring optional SVG sanitization and ability to target nested SVGs! This update contains a lot, please BACKUP YOUR DATABASE AND FILES BEFORE UPDATING!

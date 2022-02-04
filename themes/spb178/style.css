@@ -20,7 +20,6 @@ url('assets/fonts/Roboto-Regular.ttf') format('truetype'), font-weight: normal;
 
 
 .title {
-	font-family: "Raleway";
 	font-size: 28px;
 	font-weight: 700;
 	color: #000000;
@@ -639,8 +638,9 @@ a {
 }
 
 .img-container {
-	padding: 250px 0;
-	background: url("images/11111-5-1024x299.jpg") bottom center no-repeat;
+	padding-top: 300px;
+	padding-bottom: 180px;
+	background: url("images/11111-5-scaled (1).jpg") bottom center no-repeat;
 	background-size: 100%;
 }
 
@@ -675,7 +675,7 @@ a {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	-ms-flex-pack: distribute;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .subtitle {
@@ -799,6 +799,7 @@ a {
 .renovation-list {
 	color: #FFFFFF;
 	text-align: left;
+	white-space: pre-wrap;
 }
 
 .lh-15 {
@@ -833,10 +834,11 @@ a {
 
 
 .img-container-hight {
-	padding: 260px 0;
-	background: url("images/q6-1024x6621.jpg") center center/cover no-repeat;
+	padding-top: 280px;
+	padding-bottom: 140px;
+	background: url("images/q6 (1).jpg") center center/cover no-repeat;
 	background-size: 100%;
-	height: 300px;
+	background-position: top;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1296,10 +1298,9 @@ a {
 	-ms-flex-pack: center;
 	justify-content: center;
 	text-align: center;
-	padding: 130px 0;
-	background: url("images/cathedral-roof-1681374-1024x685 (1).jpg") center center/cover no-repeat;
-	background-position: top;
-	background-size: cover;
+	padding-top: 230px;
+	padding-bottom: 130px;
+	background: url("images/cathedral-roof-1681374-scaled.jpg") top center/cover no-repeat;
 	border-bottom: 1px solid #fa903c;
 }
 
@@ -1693,6 +1694,14 @@ a {
 	.footer_block_img {
 		z-index: -1;
 	}
+}
+
+@media screen and (max-width: 878px){
+	.img-roof__container {
+		padding-top: 100px;
+	}
+
+	.img
 }
 
 @media (max-width: 784px) {

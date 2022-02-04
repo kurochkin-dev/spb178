@@ -220,7 +220,8 @@
 
 @media (max-width: 1000px) {
 	.img-container {
-		padding-top: 150px;
+		padding-top: 210px;
+		padding-bottom: 90px;
 	}
 
 	.facade-container, .snow-container, .porch-container, .blindarea-container, .room-container, .cerem-container, .plumb-container {
@@ -381,7 +382,8 @@
 	}
 
 	.img-container {
-		padding-bottom: 120px;
+		padding-top: 45px;
+		padding-bottom: 55px;
 	}
 
 	.big-foto {
@@ -740,6 +742,33 @@
 
 }
 
+@media screen and (max-width: 878px) {
+	.img-container-facade {
+		padding-top: 120px;
+		padding-bottom: 160px;
+	}
+
+	.img-container-snow,
+	.img-container-renovation,
+	.img-container-room,
+	.img-container-cerem,
+	.img-container-plumb {
+		padding-top: 100px;
+	}
+
+	.img-container-hight {
+		padding-top: 100px;
+		padding-bottom: 120px;
+	}
+
+	.img-container-porch {
+		padding-top: 75px;
+		padding-bottom: 130px;
+	}
+
+}
+
+
 @media screen and (max-width: 812px) and (orientation: landscape) {
 	.contacts-footer {
 		position: absolute;
@@ -754,10 +783,6 @@
 
 	.top-address-text1 a {
 		font-size: 12px;
-	}
-
-	.img-container-renovation {
-		padding-top: 160px;
 	}
 
 	.block_bot_1 {
@@ -1125,11 +1150,6 @@
 
 @media (max-width: 528px) {
 
-	.img-container-hight {
-		background-position: bottom;
-		padding: 0;
-	}
-
 	.phone-number, .time-hours, .mail__address, .address__map {
 		font-size: 14px;
 	}
@@ -1140,6 +1160,11 @@
 
 	.full_dop {
 		min-height: 495px;
+	}
+
+	.img-container-hight {
+		padding-top: 35px;
+		padding-bottom: 60px;
 	}
 
 }
@@ -1170,7 +1195,15 @@
 	}
 
 	.img-container-hight {
-		height: 100%;
+		padding-top: 22px;
+		padding-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.img-container {
+		padding-top: 10px;
+		padding-bottom: 0px;
 	}
 }
 

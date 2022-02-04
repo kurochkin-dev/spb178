@@ -6,7 +6,7 @@ Template Post Type: post
 ?>
 <?php get_header('home'); ?>
 
-<div class="img-container-facade">
+<div class="<?php the_field('facade_class_img'); ?>">
     <h1 class="facade__title">
         <?php the_field('facade_title'); ?>
     </h1>

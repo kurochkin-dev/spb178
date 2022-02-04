@@ -15,7 +15,7 @@ get_header('home');
 </div>
 <?php the_content(); ?>
 <?php
-include 'price-section.php';
+include 'inc/price-section.php';
 ?>
 <div class="porch-container">
 	<?php the_field('porch_desc'); ?>

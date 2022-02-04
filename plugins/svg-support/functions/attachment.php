@@ -156,6 +156,9 @@ function bodhi_svgs_sanitize( $file ){
 
 	global $sanitizer;
 
+	$sanitizer->setAllowedTags( new bodhi_svg_tags() );
+	$sanitizer->setAllowedAttrs( new bodhi_svg_attributes() );
+
 	$dirty = file_get_contents( $file );
 
 	// try to decode if gzipped is enabled
@@ -237,18 +240,6 @@ function bodhi_svgs_sanitize_svg( $file ){
 
 // sanizite svg if user has enabled option
 add_filter( 'wp_handle_upload_prefilter', 'bodhi_svgs_sanitize_svg' );
-
-// add filters to allow developers to create their own whitelist xml attributes and tags for sanitization
-function bodhi_svgs_apply_filters(){
-
-	global $sanitizer;
-
-	$sanitizer->setAllowedTags( new bodhi_svg_tags() );
-	$sanitizer->setAllowedAttrs( new bodhi_svg_attributes() );
-
-}
-
-add_action('after_setup_theme', 'bodhi_svgs_apply_filters');
 
 // Fix image widget PHP warnings
 function bodhi_svgs_get_attachment_metadata( $data ) {

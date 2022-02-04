@@ -17,7 +17,7 @@ get_header('home');
 <?php the_content(); ?>
 
 <?php
-include 'price-section.php';
+include 'inc/price-section.php';
 ?>
 <div class="room-container">
 	<div class="room__wrap wrap">
