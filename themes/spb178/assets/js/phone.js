@@ -1,22 +1,22 @@
 
 
 /* E-mail send function */
-$(document).ready(function () {
-	$("#form").submit(function () { //Change
-		var th = $(this);
-		$.ajax({
+jQuery(document).ready(function () {
+	jQuery("#form").submit(function () { //Change
+		var th = jQuery(this);
+		jQuery.ajax({
 			type: "POST",
 			url: "/mail.php", //Change
 			data: th.serialize()
 		}).done(function () {
-			$('#submit').text('Отправлено!').addClass('successSubmit');
+			jQuery('#submit').text('Отправлено!').addClass('successSubmit');
 			setTimeout(function () {
 				// Done Functions
 				th.trigger("reset");
-				$('#submit').text('Оставить заявку').removeClass('successSubmit');
-				$('#submit').attr('disabled', true).removeClass('activeSubmit');
-				$('#uAgree').removeClass('activeLink');
-				$(".mask").removeClass("active")
+				jQuery('#submit').text('Оставить заявку').removeClass('successSubmit');
+				jQuery('#submit').attr('disabled', true).removeClass('activeSubmit');
+				jQuery('#uAgree').removeClass('activeLink');
+				jQuery(".mask").removeClass("active")
 			}, 3000);
 		});
 		return false;

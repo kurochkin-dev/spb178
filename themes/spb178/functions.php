@@ -1,19 +1,7 @@
 <?php
 
-
 //удаление тегов <br> в формах contacts form 7
 add_filter('wpcf7_autop_or_not', '__return_false');
-
-//Добавление дата атрибута к полю формы
-//add_filter( 'wpcf7_form_elements', 'imp_wpcf7_form_elements' );
-//function imp_wpcf7_form_elements( $content ) {
-//    $str_pos = strpos( $content, 'name="dynamichidden-485"' );
-//    $title = the_title();
-//    if ( $str_pos !== false ) {
-//        $content = substr_replace( $content, ' data-page-title="'.$title.'" ', $str_pos, 0 );
-//    }
-//    return $content;
-//}
 
 //Регистрация кастомных полей для видео
 add_action('acf/register_fields', 'my_register_fields');
@@ -24,12 +12,12 @@ function my_register_fields()
 }
 
 //Перерегистрация jQuery
-add_action('wp_enqueue_scripts', 'include_custom_jquery');
-function include_custom_jquery()
-{
-    wp_deregister_script('jquery');
-    wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery-3.4.1.min.js', array(), '3.4.1', false);
-}
+//add_action('wp_enqueue_scripts', 'include_custom_jquery');
+//function include_custom_jquery()
+//{
+//    wp_deregister_script('jquery');
+//    wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery-3.4.1.min.js', array(), '3.4.1', false);
+//}
 
 //Добавление fontawesome
 add_action('wp_enqueue_scripts', 'enqueue_load_fa');

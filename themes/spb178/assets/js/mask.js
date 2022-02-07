@@ -1,6 +1,6 @@
 
 /* Mask for Phone */
-$(document).ready(function () {
+jQuery(document).ready(function () {
 	[].forEach.call(document.querySelectorAll('#phone'), function (input) {
 		var keyCode;
 		function mask(event) {
@@ -22,8 +22,8 @@ $(document).ready(function () {
 			var reg = matrix.substr(0, this.value.length).replace(/_+/g,
 				function (a) {
 					return "\\d{1," + a.length + "}"
-				}).replace(/[+()]/g, "\\$&");
-			reg = new RegExp("^" + reg + "$");
+				}).replace(/[+()]/g, "\\jQuery&");
+			reg = new RegExp("^" + reg + "jQuery");
 			if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
 			if (event.type == "blur" && this.value.length < 5) this.value = ""
 		}

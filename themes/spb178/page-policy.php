@@ -8,6 +8,7 @@ get_header('home');
 ?>
 
 <section class="container__policy">
+
 	<h1 class="policy__title"><strong>Политика в отношении обработки персональных
 			данных</strong></h1>
 

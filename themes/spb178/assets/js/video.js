@@ -1,23 +1,23 @@
 /* Open modal */
-$(".butt").on("click", function () {
-    $(".maskV").addClass("showV");
+jQuery(".butt").on("click", function () {
+    jQuery(".maskV").addClass("showV");
 });
 
 /* Modal close */
-$(".close, .maskV").on("click", function () {
-    $(".maskV").removeClass("showV");
+jQuery(".close, .maskV").on("click", function () {
+    jQuery(".maskV").removeClass("showV");
 });
 
 /* Close modal on Esc */
-$(document).keyup(function (e) {
+jQuery(document).keyup(function (e) {
     if (e.keyCode == 27) {
-        $(".maskV").removeClass("showV");
+        jQuery(".maskV").removeClass("showV");
     }
 });
 
 if (document.documentElement.clientWidth > 879) {
     setTimeout(function () {
-            $('.maskV').addClass("showV");
+            jQuery('.maskV').addClass("showV");
         }, 4000
     );
 }

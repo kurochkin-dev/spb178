@@ -9,17 +9,17 @@ let headerBtn = document.getElementById("header-btn"), modalW = document.getElem
     header = document.querySelector(".header"), html = document.getElementsByTagName("html")[0];
 headerBtn.addEventListener("click", function () {
     headerBtn.classList.toggle("active"), modalW.classList.toggle("active"), header.classList.toggle("active"), html.classList.toggle("overflowY")
-}), $("img.svg").each(function () {
-    var e = $(this), t = e.attr("id"), n = e.attr("class"), a = e.attr("src");
-    $.get(a, function (a) {
-        var l = $(a).find("svg");
+}), jQuery("img.svg").each(function () {
+    var e = jQuery(this), t = e.attr("id"), n = e.attr("class"), a = e.attr("src");
+    jQuery.get(a, function (a) {
+        var l = jQuery(a).find("svg");
         void 0 !== t && (l = l.attr("id", t)), void 0 !== n && (l = l.attr("class", n + " r-svg")), l = l.removeAttr("xmlns:a"), e.replaceWith(l)
     }, "xml")
-}), $(".connect-to-team").on("click", "#connect-to-team-btn", function () {
-    var e, t = $(this).closest(".forma");
-    btn = $(this), p_btn = btn.find("p"), name = t.find('input[name="name"]').val(), mail = t.find('input[name="mail"]').val(), phone_el = t.find('input[name="phone"]'), e = phone_el.val(), ch = "Ценральная форма\n", e.length < 18 ? (phone_el.addClass("invalid_phone"), e = phone_el.val(), phone_el.val("Введите номер корректно"), phone_el.css("color", "red"), console.log(e), btn.prop("disabled", !0), setTimeout(function () {
+}), jQuery(".connect-to-team").on("click", "#connect-to-team-btn", function () {
+    var e, t = jQuery(this).closest(".forma");
+    btn = jQuery(this), p_btn = btn.find("p"), name = t.find('input[name="name"]').val(), mail = t.find('input[name="mail"]').val(), phone_el = t.find('input[name="phone"]'), e = phone_el.val(), ch = "Ценральная форма\n", e.length < 18 ? (phone_el.addClass("invalid_phone"), e = phone_el.val(), phone_el.val("Введите номер корректно"), phone_el.css("color", "red"), console.log(e), btn.prop("disabled", !0), setTimeout(function () {
         phone_el.removeClass("invalid_phone"), phone_el.val(e), phone_el.css("color", "black"), btn.prop("disabled", !1)
-    }, 2e3)) : $.ajax({
+    }, 2e3)) : jQuery.ajax({
         url: "/api/new.php",
         type: "post",
         dataType: "json",
@@ -35,7 +35,7 @@ headerBtn.addEventListener("click", function () {
             }, 1200)
         }
     })
-}), $(document).on("ready", function () {
+}), jQuery(document).on("ready", function () {
     [].forEach.call(document.querySelectorAll('input[name="phone"]'), function (e) {
         var t;
 
@@ -48,8 +48,8 @@ headerBtn.addEventListener("click", function () {
             -1 != (a = o.indexOf("_")) && (a < 5 && (a = 3), o = o.slice(0, a));
             var s = n.substr(0, this.value.length).replace(/_+/g, function (e) {
                 return "\\d{1," + e.length + "}"
-            }).replace(/[+()]/g, "\\$&");
-            (!(s = new RegExp("^" + s + "$")).test(this.value) || this.value.length < 5 || t > 47 && t < 58) && (this.value = o), "blur" == e.type && this.value.length < 5 && (this.value = "")
+            }).replace(/[+()]/g, "\\jQuery&");
+            (!(s = new RegExp("^" + s + "jQuery")).test(this.value) || this.value.length < 5 || t > 47 && t < 58) && (this.value = o), "blur" == e.type && this.value.length < 5 && (this.value = "")
         }
 
         e.addEventListener("input", n, !1), e.addEventListener("focus", n, !1), e.addEventListener("blur", n, !1)

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Duplicator &#8211; WordPress Migration Plugin - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-25 11:30:32+0000\n"
+"PO-Revision-Date: 2022-02-02 15:39:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2241,6 +2241,10 @@ msgstr "mysqldump не был найден в папке по-умолчанию
 msgid "Note: Timeouts can also be set at the web server layer, so if the PHP max timeout passes and you still see a build timeout messages, then your web server could be killing the process.   If you are on a budget host and limited on processing time, consider using the database or file filters to shrink the size of your overall package.   However use caution as excluding the wrong resources can cause your install to not work properly."
 msgstr "Заметка: таймаут может быть установлен и на уровне вебсервера, так что если PHP и имеет значение выше, то вебсервер может прерывать процесс. Если у Вас лимит по времени выполнения, используйте фильтры файлов или базы данных, чтобы внизить общий размер пакета. Но осторожно! Исключение нужных ресурсов может привести к проблемам в работе установленного пакета."
 
+#: views/settings/gopro.php:161
+msgid "Enhanced Options"
+msgstr "Расширенные параметры"
+
 #: duplicator-main.php:238 views/packages/main/packages.php:92
 #: views/settings/controller.php:19 views/settings/general.php:180
 msgid "Settings"
@@ -2588,10 +2592,6 @@ msgstr "Зарезервированные файлы"
 msgid "Complete Online Documentation"
 msgstr "Полная онлайн документация"
 
-#: views/tools/diagnostics/support.php:54
-msgid "FAQs"
-msgstr "ЧаВО"
-
 #: views/tools/diagnostics/support.php:110
 msgid "Pro Solutions!"
 msgstr "Профи решения!"
@@ -2694,3 +2694,7 @@ msgstr "кэш"
 #: views/tools/diagnostics/support.php:56
 msgid "Change Log"
 msgstr "Журнал изменений"
+
+#: views/tools/diagnostics/support.php:54
+msgid "FAQs"
+msgstr "FAQs"

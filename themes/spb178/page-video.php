@@ -9,7 +9,7 @@ get_header('home');
 
 	<div class="video__container">
 		<h3 class="video__title">
-            <?php the_field('video_title'); ?>
+			<?php the_title(); ?>
 		</h3>
 		<div class="container__inner">
             <?php if (have_rows('videos')): ?>

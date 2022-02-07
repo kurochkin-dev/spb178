@@ -1,8 +1,8 @@
-$(".prices").on("click", ".right__btn", function () {
-    var e = $(".forma");
-    btn = $(this), p_btn = btn.find("p"), button = $(".right__btn"), name = e.find('input[name="name"]').val(), phone_el = e.find('input[name="phone"]'), phone = phone_el.val(), ch = "Форма в центре\n", console.log(phone_el), phone.length < 18 ? (phone_el.addClass("invalid_phone"), phone_el.prop("placeholder", "Введите номер телефона"), button.prop("disabled", !0), setTimeout(function () {
+jQuery(".prices").on("click", ".right__btn", function () {
+    var e = jQuery(".forma");
+    btn = jQuery(this), p_btn = btn.find("p"), button = jQuery(".right__btn"), name = e.find('input[name="name"]').val(), phone_el = e.find('input[name="phone"]'), phone = phone_el.val(), ch = "Форма в центре\n", console.log(phone_el), phone.length < 18 ? (phone_el.addClass("invalid_phone"), phone_el.prop("placeholder", "Введите номер телефона"), button.prop("disabled", !0), setTimeout(function () {
         phone_el.removeClass("invalid_phone"), phone_el.prop("placeholder", "+7(___) ___-__-__"), button.prop("disabled", !1)
-    }, 2e3)) : (console.log(ch), $.ajax({
+    }, 2e3)) : (console.log(ch), jQuery.ajax({
         url: "/api/mail.php",
         type: "post",
         dataType: "json",
@@ -16,7 +16,7 @@ $(".prices").on("click", ".right__btn", function () {
             }, 1200)
         }
     }))
-}), $(document).ready(function () {
+}), jQuery(document).ready(function () {
     [].forEach.call(document.querySelectorAll('input[name="phone"]'), function (e) {
         var i;
 
@@ -29,8 +29,8 @@ $(".prices").on("click", ".right__btn", function () {
             -1 != (t = l.indexOf("_")) && (t < 5 && (t = 3), l = l.slice(0, t));
             var p = n.substr(0, this.value.length).replace(/_+/g, function (e) {
                 return "\\d{1," + e.length + "}"
-            }).replace(/[+()]/g, "\\$&");
-            (!(p = new RegExp("^" + p + "$")).test(this.value) || this.value.length < 5 || 47 < i && i < 58) && (this.value = l),
+            }).replace(/[+()]/g, "\\jQuery&");
+            (!(p = new RegExp("^" + p + "jQuery")).test(this.value) || this.value.length < 5 || 47 < i && i < 58) && (this.value = l),
             "blur" == e.type && this.value.length < 5 && (this.value = "")
         }
 
