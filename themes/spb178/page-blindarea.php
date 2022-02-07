@@ -10,8 +10,8 @@ get_header('home');
 	<h1 class="blindarea__title">
 		Устройство отмостки дома
 	</h1>
-	<button onclick="return location.href = '/galereya/#blindarea';" class="blindarea__btn-link">Галерея готовых
-		объектов
+	<button onclick="return location.href = '/galereya/#blindarea';" class="blindarea__btn-link">
+		Галерея готовых объектов
 	</button>
 </div>
 <?php the_content(); ?>

@@ -1,6 +1,4 @@
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 
 
 <div class="<?php the_field('class_image'); ?>">
@@ -16,9 +14,7 @@ get_header('home');
                     $imgClass = get_sub_field('button_class');
                     $buttonImg = get_sub_field('button_img')
                     ?>
-					<img id="button<?php echo $i; ?>" class="dop_button <?php echo $imgClass; ?>"
-						 src="<?php echo $buttonImg; ?>" alt="Работы">
-
+					<img id="button<?php echo $i; ?>" class="dop_button <?php echo $imgClass; ?>" src="<?php echo $buttonImg; ?>" alt="Работы">
                     <?php
                     $i++;
                 endwhile; ?>
@@ -36,7 +32,7 @@ get_header('home');
                     $title = get_sub_field('construction_title');
                     $desc = get_sub_field('construction_p');
                     $list = get_sub_field('construction_list');
-                    $btn = get_sub_field('construction_btn');;
+                    $btn = get_sub_field('construction_btn');
                     ?>
 					<div id="div_info_<?php echo $i; ?>">
 

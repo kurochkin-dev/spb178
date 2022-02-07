@@ -52,6 +52,7 @@
 		<div><img src="https://mc.yandex.ru/watch/30583767" style="position:absolute; left:-9999px;" alt="Карта"/></div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
 	<script>

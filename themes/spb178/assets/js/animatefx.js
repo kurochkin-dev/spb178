@@ -14,7 +14,7 @@
 
 	// Helper vars and functions.
 	function extend( a, b ) {
-		for( var key in b ) {
+		for( let key in b ) {
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];
 			}
@@ -113,10 +113,10 @@
 	 * Init/Bind events.
 	 */
 	TiltFx.prototype._initEvents = function() {
-		var self = this;
+		let self = this;
 
 		this.mouseenterFn = function() {
-			for(var key in self.DOM.animatable) {
+			for(let key in self.DOM.animatable) {
 				anime.remove(self.DOM.animatable[key]);
 			}
 		};
@@ -127,8 +127,8 @@
 
 		this.mouseleaveFn = function(ev) {
 			requestAnimationFrame(function() {
-				for(var key in self.DOM.animatable) {
-					if( self.options.movement[key] == undefined ) {continue;}
+				for(let key in self.DOM.animatable) {
+					if( self.options.movement[key] === undefined ) {continue;}
 					anime({
 						targets: self.DOM.animatable[key],
 						duration: self.options.movement[key].reverseAnimation != undefined ? self.options.movement[key].reverseAnimation.duration || 0 : 1,
@@ -155,7 +155,7 @@
 
 	TiltFx.prototype._layout = function(ev) {
 		// Mouse position relative to the document.
-		var mousepos = getMousePos(ev),
+		let mousepos = getMousePos(ev),
 			// Document scrolls.
 			docScrolls = {left : document.body.scrollLeft + document.documentElement.scrollLeft, top : document.body.scrollTop + document.documentElement.scrollTop},
 			bounds = this.DOM.el.getBoundingClientRect(),
@@ -163,15 +163,15 @@
 			relmousepos = { x : mousepos.x - bounds.left - docScrolls.left, y : mousepos.y - bounds.top - docScrolls.top };
 
 		// Movement settings for the animatable elements.
-		for(var key in this.DOM.animatable) {
-			if( this.DOM.animatable[key] == undefined || this.options.movement[key] == undefined ) {
+		for(let key in this.DOM.animatable) {
+			if( this.DOM.animatable[key] === undefined || this.options.movement[key] === undefined ) {
 				continue;
 			}
-			var t = this.options.movement[key] != undefined ? this.options.movement[key].translation || {x:0,y:0,z:0} : {x:0,y:0,z:0},
+			let t = this.options.movement[key] != undefined ? this.options.movement[key].translation || {x:0,y:0,z:0} : {x:0,y:0,z:0},
 				r = this.options.movement[key] != undefined ? this.options.movement[key].rotation || {x:0,y:0,z:0} : {x:0,y:0,z:0},
 				setRange = function (obj) {
 					for(var k in obj) {
-						if( obj[k] == undefined ) {
+						if( obj[k] === undefined ) {
 							obj[k] = [0,0];
 						}
 						else if( typeof obj[k] === 'number' ) {
@@ -183,7 +183,7 @@
 			setRange(t);
 			setRange(r);
 
-			var transforms = {
+			let transforms = {
 				translation : {
 					x: (t.x[1]-t.x[0])/bounds.width*relmousepos.x + t.x[0],
 					y: (t.y[1]-t.y[0])/bounds.height*relmousepos.y + t.y[0],
