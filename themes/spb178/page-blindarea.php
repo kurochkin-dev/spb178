@@ -26,7 +26,7 @@ include 'inc/price-section.php';
 	<div class="blindarea__wrap wrap">
         <?php $images = get_field('blindarea_images');
         if ($images): ?>
-			<img src="<?php the_field('blindarea_image'); ?>" alt="" class="blindarea__img">
+			<img src="<?php the_field('blindarea_image'); ?>" alt="Отмостка дома" class="blindarea__img">
 			<div class="blindarea__block-img">
                 <?php foreach ($images as $image): ?>
 					<a href="<?php echo $image; ?>" class="gallery-link" rel="lightbox">

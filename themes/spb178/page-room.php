@@ -28,7 +28,7 @@ include 'inc/price-section.php';
 	<div class="room__wrap wrap">
         <?php $images = get_field('room_images');
         if ($images): ?>
-			<img src="<?php the_field('room_image'); ?>" alt="" class="room__img">
+			<img src="<?php the_field('room_image'); ?>" alt="Изображение" class="room__img">
 			<div class="room__block-img">
                 <?php foreach ($images as $image): ?>
 					<a href="<?php echo $image; ?>" class="gallery-link" rel="lightbox">

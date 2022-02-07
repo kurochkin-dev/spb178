@@ -26,7 +26,7 @@ get_header('home');
     <div class="snow__wrap wrap">
         <?php $images = get_field('snow_images');
         if ($images): ?>
-            <img src="<?php the_field('snow_image'); ?>" alt="" class="snow__img">
+            <img src="<?php the_field('snow_image'); ?>" alt="Изображение" class="snow__img">
             <div class="snow__block-img">
                 <?php foreach ($images as $image): ?>
                     <a href="<?php echo $image; ?>" class="gallery-link" rel="lightbox">

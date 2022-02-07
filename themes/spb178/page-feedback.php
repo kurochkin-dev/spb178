@@ -15,7 +15,7 @@ get_header('home');
 		</div>
 	</div>
 <?php
-include 'ceo-message.php';
+include 'inc/ceo-message.php';
 ?>
 	<section class="feedback-letter">
 		<div class="feedback-letter__wrap">

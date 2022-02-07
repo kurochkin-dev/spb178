@@ -14,7 +14,7 @@ get_header('home');
 	</div>
 </div>
 <?php
-include 'ceo-message.php';
+include 'inc/ceo-message.php';
 ?>
 <div class="container-line__wrap">
 	<div class="gallery__line"></div>
@@ -107,7 +107,7 @@ include 'ceo-message.php';
 		</div>
 	</div>
 	<div class="gallery__wrap">
-		<img src="<?php the_field('gallery_img_two'); ?>" alt=""
+		<img src="<?php the_field('gallery_img_two'); ?>" alt="Изображение"
 			 class="gallery-image">
 		<div class="gallery-info__block gallery-info__block--right gallery-info__porch">
 			<h2 class="gallery__title"><?php the_field('gallery_subtitle_two'); ?></h2>
@@ -288,9 +288,7 @@ include 'ceo-message.php';
 </div>
 <div class="container-gallery">
 	<div class="gallery__wrap">
-		<img src="<?php the_field('gallery_img_three'); ?>"
-			 alt=""
-			 class="gallery-image">
+		<img src="<?php the_field('gallery_img_three'); ?>" alt="Изображение" class="gallery-image">
 		<div class="gallery-info__block gallery-info__block--left gallery-info__room">
 			<h2 class="gallery__title"><?php the_field('gallery_subtitle_three'); ?></h2>
 			<a href="service/room/" class="gallery__btn">Подробнее</a>

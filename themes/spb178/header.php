@@ -3,8 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, shrink-to-fit=no">
-
-	<!-- <meta name="viewport" content="width=320, user-scalable=no, minimal-ui,target-densitydpi=device-dpi"> -->
 	<meta name="description"
 		  content="Компания 'СтройСнаб' выполняет строительные, высотные, ремонтные и монтажные работы любой сложности в Санкт-Петербурге. Звоните +7 (812) 454-55-78.">
 	<meta name="keywords" content="">
@@ -51,7 +49,7 @@
         });
 	</script>
 	<noscript>
-		<div><img src="https://mc.yandex.ru/watch/30583767" style="position:absolute; left:-9999px;" alt=""/></div>
+		<div><img src="https://mc.yandex.ru/watch/30583767" style="position:absolute; left:-9999px;" alt="Карта"/></div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->

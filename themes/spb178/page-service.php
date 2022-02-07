@@ -8,7 +8,7 @@ Template Name: Услуги
 
 
 	<!--SERVICE-->
-	<div class="big-foto"><img alt="Услуги" class="big-foto"
+	<div class="big-photo"><img alt="Услуги" class="big-photo"
 							   src="<?php the_field('service_image'); ?>"></div>
 	<div class="container">
 

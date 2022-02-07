@@ -38,8 +38,7 @@ get_header();
 	<nav id="nav" class="header_nav" aria-details="navigation">
         <?php wp_nav_menu(array('container' => false)); ?>
 		<div id="subnav">
-			<img class="subnav__img" src="<?php bloginfo('template_directory'); ?>/images/bg_for_subnav_reverce.png"
-				 alt="">
+			<img class="subnav__img" src="<?php bloginfo('template_directory'); ?>/images/bg_for_subnav_reverce.png" alt="Фон">
 			<ul class="subnav__list">
 				<li><a class="service-item" href="/service/construction-work/">Строительные работы</a></li>
 				<li><a class="service-item" href="/service/visotnie-raboti/">Высотные работы</a></li>
@@ -75,15 +74,6 @@ get_header();
 		<div class="mask" role="dialog"></div>
 		<div class="modalW" id="modalW">
             <?php echo do_shortcode('[contact-form-7 id="48" title="Форма обратной связи"]') ?>
-			<script>
-                // $(document).on("ready", function () {
-                //     $('#btn').click(function () {
-                //         let titlePage = $(this).attr('data-page-title');
-                //         $('#hidden').val(titlePage);
-                //         console.log(titlePage);
-                //     });
-                // });
-			</script>
 		</div>
 		<div class="main-footer index-footer">
 			<div class="index-footer__list">
@@ -117,6 +107,3 @@ if (is_front_page() || is_home()) {
 }
 ?>
 
-<?php
-//get_footer('anyscripts');
-//?>

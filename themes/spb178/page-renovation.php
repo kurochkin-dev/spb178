@@ -15,15 +15,18 @@ get_header('home');
 <div class="renovation-container">
 	<div class="renovation-container__outer container__outer">
 		<div class="div_dop_button">
-			<img id="button1" class="dop_button button-room" src="<?php bloginfo('template_directory'); ?>/images/rem_room.jpg" alt="">
-			<img id="button2" class="dop_button button-plum" src="<?php bloginfo('template_directory'); ?>/images/rem_paradnih.jpg" alt="">
-			<img id="button3" class="dop_button button-cerem" src="<?php bloginfo('template_directory'); ?>/images/santex.jpg" alt="">
+			<img id="button1" class="dop_button button-room"
+				 src="<?php bloginfo('template_directory'); ?>/images/rem_room.jpg" alt="Ремонт помещений">
+			<img id="button2" class="dop_button button-plum"
+				 src="<?php bloginfo('template_directory'); ?>/images/rem_paradnih.jpg" alt="Ремонт парадных">
+			<img id="button3" class="dop_button button-cerem"
+				 src="<?php bloginfo('template_directory'); ?>/images/santex.jpg" alt="Сантехнические работы">
 		</div>
 		<div id="full_dop" class="full_dop">
-			<?php the_content(); ?>
+            <?php the_content(); ?>
 
             <?php
-            $i=1;
+            $i = 1;
             if (have_rows('renovation_modals')): ?>
 
                 <?php while (have_rows('renovation_modals')): the_row();
@@ -57,11 +60,8 @@ get_header('home');
                     <?php
                     $i++;
                 endwhile; ?>
-
             <?php endif; ?>
-
 		</div>
-
 	</div>
 </div>
 
