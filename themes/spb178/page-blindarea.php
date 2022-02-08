@@ -36,7 +36,7 @@ include 'inc/price-section.php';
 			</div>
         <?php endif; ?>
 		<div class="blindarea-btn__wrap">
-			<button onclick="return location.href = '/galereya/';" class="blindarea__btn">галерея</button>
+			<button onclick="return location.href = '/galereya/';" class="blindarea__btn">Галерея</button>
 		</div>
 	</div>
 </div>

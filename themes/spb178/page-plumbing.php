@@ -6,12 +6,12 @@ Template Name: Сантехнические работы
 <?php
 get_header('home');
 ?>
-
 	<div class="img-container-plumb">
 		<h1 class="plumb__title">
 			<?php the_field('plumb_title'); ?>
 		</h1>
-		<button onclick="return location.href = '/galereya/#plumb';" class="plumb__btn-link">Галерея готовых объектов
+		<button onclick="return location.href = '/galereya/#plumb';" class="plumb__btn-link">
+			Галерея готовых объектов
 		</button>
 	</div>
 <?php the_content(); ?>

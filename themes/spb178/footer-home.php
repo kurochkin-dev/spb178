@@ -55,7 +55,10 @@
 	<div class="footer_block footer_block_right">
 		<img class="footer_block_img" src="<?php bloginfo('template_directory'); ?>/img_menu/Dark-Background-right.png">
 	</div>
-
+	<div id="cookie_notification">
+		<p>Для улучшения работы сайта и его взаимодействия с пользователями мы используем файлы cookie. Продолжая работу с сайтом, Вы разрешаете использование cookie-файлов. Вы всегда можете отключить файлы cookie в настройках Вашего браузера.</p>
+		<button class="button cookie_accept">Принять</button>
+	</div>
 </footer>
 
 <?php wp_footer(); ?>

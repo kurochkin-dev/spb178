@@ -38,7 +38,8 @@ get_header();
 	<nav id="nav" class="header_nav" aria-details="navigation">
         <?php wp_nav_menu(array('container' => false)); ?>
 		<div id="subnav">
-			<img class="subnav__img" src="<?php bloginfo('template_directory'); ?>/images/bg_for_subnav_reverce.png" alt="Фон">
+			<img class="subnav__img" src="<?php bloginfo('template_directory'); ?>/images/bg_for_subnav_reverce.png"
+				 alt="Фон">
 			<ul class="subnav__list">
 				<li><a class="service-item" href="/service/construction-work/">Строительные работы</a></li>
 				<li><a class="service-item" href="/service/visotnie-raboti/">Высотные работы</a></li>
@@ -57,7 +58,7 @@ get_header();
 	<div class="main-index main">
 		<!-- Logo part -->
 		<div id="main-logo">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+			<a href="<?php echo esc_url(home_url('/')); ?>">
 				<picture>
 					<source srcset="<?php the_field('logo_main_webp'); ?>" type="image/webp">
 					<img class="index__logo" src="<?php the_field('logo_main_png'); ?>" alt="ООО СтройСнаб">
@@ -91,8 +92,9 @@ get_header();
 					<a class="address-tel__link"
 					   href="tel:<?php the_field('main_phone_two'); ?>"><?php the_field('main_phone_two'); ?></a>
 				</div>
-				<div class="index-footer__item-wrap"><a class="address-mail__link"
-														href="mailto:spb178.com@yandex.ru"><?php the_field('main_mail'); ?></a>
+				<div class="index-footer__item-wrap">
+					<a class="address-mail__link"
+					   href="mailto:<?php the_field('main_mail'); ?>"><?php the_field('main_mail'); ?></a>
 				</div>
 				<div class="index-footer__item-wrap">
 					<p class="work-hour"><?php the_field('main_open_hour'); ?></p>
