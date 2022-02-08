@@ -3,9 +3,7 @@
 Template Name: Сантехнические работы
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 	<div class="img-container-plumb">
 		<h1 class="plumb__title">
 			<?php the_field('plumb_title'); ?>
@@ -25,6 +23,4 @@ the_field('plumb_article_two');
 the_field('plumb_article_three');
 ?>
 
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>

@@ -4,9 +4,7 @@ Template Name: Очистка кровли от снега и наледи
 Template Post Type: post
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 
 <div class="img-container-snow">
     <h1 class="snow__title">
@@ -39,6 +37,4 @@ get_header('home');
 </div>
 <?php the_field('snow_desc_two'); ?>
 
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>

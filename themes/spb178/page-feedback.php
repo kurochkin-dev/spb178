@@ -3,9 +3,7 @@
 Template Name: Отзывы
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 	<div class="feedback">
 		<div class="feedback-wrap">
 			<h1 class="feedback__title">
@@ -33,6 +31,4 @@ include 'inc/ceo-message.php';
 		</div>
 	</section>
 	<div class="feedback__line"></div>
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>

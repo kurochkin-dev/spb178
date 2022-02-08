@@ -6,18 +6,16 @@ Template Name: Услуги
 
 <?php get_header('home'); ?>
 
-
 	<!--SERVICE-->
-	<div class="big-photo"><img alt="Услуги" class="big-photo"
-							   src="<?php the_field('service_image'); ?>"></div>
+	<div class="big-photo">
+		<img alt="Услуги" class="big-photo" src="<?php the_field('service_image'); ?>">
+	</div>
 	<div class="container">
-
         <?php query_posts('cat=7&order=ASC');
         if (have_posts()) {
             while (have_posts()) {
                 the_post();
                 ?>
-
                 <?php if (have_rows('service_cards')): ?>
                     <?php while (have_rows('service_cards')): the_row();
                         $link = get_sub_field('service_link');
@@ -39,17 +37,13 @@ Template Name: Услуги
 						</a>
                     <?php endwhile; ?>
                 <?php endif; ?>
-
                 <?php
             }
             wp_reset_query();
         } else {
             echo 'Записей нет';
         }
-
         ?>
-
-
 	</div>
 
 <?php get_footer('home'); ?>

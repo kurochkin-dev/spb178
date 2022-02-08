@@ -3,10 +3,7 @@
 Template Name: Видео
 */
 ?>
-<?php
-get_header('home');
-?>
-
+<?php get_header('home'); ?>
 	<div class="video__container">
 		<h3 class="video__title">
 			<?php the_title(); ?>
@@ -24,6 +21,4 @@ get_header('home');
 		</div>
 	</div>
 
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>

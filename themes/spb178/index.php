@@ -4,9 +4,7 @@ Template Name: Главная
 */
 ?>
 
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
 <style>
 	.hamburger-icon {

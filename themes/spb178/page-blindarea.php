@@ -3,9 +3,7 @@
 Template Name: Устройство отмостки дома
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 <div class="img-container-blindarea">
 	<h1 class="blindarea__title">
 		Устройство отмостки дома
@@ -16,9 +14,7 @@ get_header('home');
 </div>
 <?php the_content(); ?>
 
-<?php
-include 'inc/price-section.php';
-?>
+<?php include 'inc/price-section.php'; ?>
 
 <div class="blindarea-container">
     <?php the_field('blindarea_article'); ?>
@@ -42,7 +38,5 @@ include 'inc/price-section.php';
 </div>
 <?php the_field('blindarea_article_two'); ?>
 
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>
 

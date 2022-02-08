@@ -3,9 +3,7 @@
 Template Name: Галерея
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 
 <div class="ceo-message__wrap">
 	<h1 class="ceo-message__title"><?php the_field('gallery_main_title'); ?></h1>
@@ -197,7 +195,6 @@ include 'inc/ceo-message.php';
                 <?php the_field('address_nine'); ?>
 			</p>
 			<div class="gallery-inner">
-
                 <?php if (have_rows('gallery_images_nine')): ?>
                     <?php while (have_rows('gallery_images_nine')): the_row();
                         $link = get_sub_field('gallery_image_nine');
@@ -681,6 +678,4 @@ include 'inc/ceo-message.php';
 		</div>
 	</div>
 </div>
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>

@@ -3,9 +3,7 @@
 Template Name: Ремонт крыльца
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 <div class="img-container-porch">
 	<h1 class="porch__title">
 		<?php the_field('porch_title'); ?>
@@ -25,7 +23,5 @@ include 'inc/price-section.php';
 </div>
 <?php the_field('porch_article'); ?>
 
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>
 

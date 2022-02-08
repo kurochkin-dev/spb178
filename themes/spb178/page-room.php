@@ -3,9 +3,7 @@
 Template Name: Внутренний ремонт помещений
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 
 <div class="img-container-room">
 	<h1 class="room__title">
@@ -43,6 +41,4 @@ include 'inc/price-section.php';
 	</div>
 </div>
 <?php the_field('room_article_two'); ?>
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>

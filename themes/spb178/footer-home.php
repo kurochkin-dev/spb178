@@ -27,12 +27,16 @@
 	<div class="footer_block top-block block_bot_4">
 		<ul class="footer__list footer__list--address">
 			<li><b>Наш адрес:</b><br> <a class="link href_footer" href="https://yandex.ru/maps/-/CWDm5AN3"
-										 rel="nofollow noreferrer" target="_blank"><?php the_field('footer_address', 'option'); ?></a></li>
-			<li><b>Телефоны:</b><br><a class="link href_footer" href="tel: +78124545578"><?php the_field('footer_phone_one', 'option');?></a><br>
-				<a class="link href_footer" href="tel: +79219476179"><?php the_field('footer_phone_two', 'option');?></a>
+										 rel="nofollow noreferrer"
+										 target="_blank"><?php the_field('footer_address', 'option'); ?></a></li>
+			<li><b>Телефоны:</b><br><a class="link href_footer"
+									   href="tel: +78124545578"><?php the_field('footer_phone_one', 'option'); ?></a><br>
+				<a class="link href_footer"
+				   href="tel: +79219476179"><?php the_field('footer_phone_two', 'option'); ?></a>
 			</li>
 			<li><b>Email:</b><br> <a class="link href_footer footer__mail"
-									 href="mailto: spb178.com@yandex.ru"><?php the_field('footer_mail', 'option'); ?></a></li>
+									 href="mailto: spb178.com@yandex.ru"><?php the_field('footer_mail', 'option'); ?></a>
+			</li>
 			<li class="li_block"><b>Время работы:</b><br><?php the_field('footer_hours', 'option'); ?></li>
 		</ul>
 	</div>
@@ -46,7 +50,8 @@
 				<a href="https://www.instagram.com/stroysnab.spb" rel="nofollow noreferrer" target="_blank">
 					<i class="fab fa-instagram" aria-hidden="true"></i>
 				</a>
-				<a href="https://www.youtube.com/channel/UCOC4smtr4dU-yHpiWsOS7iQ" rel="nofollow noreferrer" target="_blank">
+				<a href="https://www.youtube.com/channel/UCOC4smtr4dU-yHpiWsOS7iQ" rel="nofollow noreferrer"
+				   target="_blank">
 					<i class="fab fa-youtube" aria-hidden="true"></i>
 				</a>
 			</div>
@@ -56,7 +61,11 @@
 		<img class="footer_block_img" src="<?php bloginfo('template_directory'); ?>/img_menu/Dark-Background-right.png">
 	</div>
 	<div id="cookie_notification">
-		<p>Для улучшения работы сайта и его взаимодействия с пользователями мы используем файлы cookie. Продолжая работу с сайтом, Вы разрешаете использование cookie-файлов. Вы всегда можете отключить файлы cookie в настройках Вашего браузера.</p>
+		<p>
+			Для улучшения работы сайта и его взаимодействия с пользователями мы используем файлы cookie. Продолжая работу
+			с сайтом, Вы разрешаете использование cookie-файлов. Вы всегда можете отключить файлы cookie в настройках
+			Вашего браузера.
+		</p>
 		<button class="button cookie_accept">Принять</button>
 	</div>
 </footer>

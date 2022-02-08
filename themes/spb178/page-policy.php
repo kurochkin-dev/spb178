@@ -3,9 +3,7 @@
 Template Name: Политика конфиденциальности
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 
 <section class="container__policy">
 
@@ -203,6 +201,4 @@ get_header('home');
 	</ol>
 </section>
 
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>

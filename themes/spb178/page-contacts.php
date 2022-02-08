@@ -3,9 +3,7 @@
 Template Name: Контакты
 */
 ?>
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 	<script>
         window.onload = function () {
             document.getElementById('ya-map').src = 'https://yandex.ru/map-widget/v1/-/CKw3bPJC';
@@ -23,15 +21,13 @@ get_header();
 			 alt="Прозрачный полифилл для фона">
 
 		<div class="container">
-			<!-- Header navigator -->
-
 			<div class="hamburger-icon" id="icon">
 				<div class="icon-1" id="a"></div>
 				<div class="icon-2" id="b"></div>
 				<div class="icon-3" id="c"></div>
 				<div class="clear"></div>
 			</div>
-
+			<!-- Header navigator -->
 			<nav id="nav" class="header_nav" aria-details="navigation">
                 <?php wp_nav_menu(array('container' => false)); ?>
 			</nav>
@@ -106,6 +102,4 @@ get_header();
 			</div>
 		</div>
 	</div>
-<?php
-get_footer('anyscripts')
-?>
+<?php get_footer('anyscripts') ?>

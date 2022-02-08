@@ -3,9 +3,7 @@
 Template Name: Внутренние ремонтные работы
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 
 <div class="img-container-renovation">
 	<h1 class="renovation__title">
@@ -65,6 +63,4 @@ get_header('home');
 	</div>
 </div>
 
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>

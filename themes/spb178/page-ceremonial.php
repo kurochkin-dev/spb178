@@ -3,9 +3,7 @@
 Template Name: Ремонт парадных
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 
 	<div class="img-container-cerem">
 		<h1 class="cerem__title">
@@ -27,6 +25,4 @@ the_field('cerem_article_two');
 the_field('cerem_article_three');
 ?>
 
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>

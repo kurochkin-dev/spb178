@@ -3,9 +3,7 @@
 Template Name: Допуски
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 	<div class="sro-container">
 		<div class="sro-row">
 			<h1 class="dopuski_cro"><?php the_field('sro_title') ?></h1>
@@ -22,6 +20,4 @@ get_header('home');
 			</div>
 		</div>
 	</div>
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>

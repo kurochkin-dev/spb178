@@ -3,9 +3,7 @@
 Template Name: Вакансии
 */
 ?>
-<?php
-get_header('home');
-?>
+<?php get_header('home'); ?>
 	<section class="about" id="about">
 		<div class="container-about">
 			<div class="about__h1">
@@ -37,7 +35,6 @@ get_header('home');
 			</div>
 			<p class="vacancy__subtitle"><?php the_field('vacancy_basic_desc'); ?></p>
 			<div id="slider" class="vacancy-slider">
-
                 <?php if (have_rows('vacancy_items')): ?>
                     <?php while (have_rows('vacancy_items')): the_row();
                         $item = get_sub_field('vacancy_item');
@@ -64,7 +61,6 @@ get_header('home');
 				<h2 class="choose__title"><?php the_field('vacancy_choose_title'); ?></h2>
 			</div>
 			<div class="choose-container">
-
                 <?php if (have_rows('vacancy_benefits')): ?>
                     <?php while (have_rows('vacancy_benefits')): the_row();
                         $image = get_sub_field('vacancy_benefit');
@@ -196,6 +192,4 @@ get_header('home');
             // END CTRL
         }
 	</script>
-<?php
-get_footer('home');
-?>
+<?php get_footer('home'); ?>
