@@ -42,10 +42,12 @@ get_header();
 			<div class="main main-contacts">
 				<!-- Logo part -->
 				<div class="main-logo" id="main-logo">
-					<picture>
-						<source srcset="<?php the_field('contact_logo_webp'); ?>" type="image/webp">
-						<img class="contacts__logo" src="<?php the_field('contact_logo_png'); ?>" alt="ООО СтройСнаб">
-					</picture>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<picture>
+							<source srcset="<?php the_field('contact_logo_webp'); ?>" type="image/webp">
+							<img class="contacts__logo" src="<?php the_field('contact_logo_png'); ?>" alt="ООО СтройСнаб">
+						</picture>
+					</a>
 				</div>
 
 				<!-- Offers part -->

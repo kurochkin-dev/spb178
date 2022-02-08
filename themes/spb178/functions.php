@@ -11,14 +11,14 @@ function my_register_fields()
     include_once('../../plugins/acf-field-video-master/acf-video.php');
 }
 
-//Добавление fontawesome
+//Добавление font-awesome
 add_action('wp_enqueue_scripts', 'enqueue_load_fa');
 function enqueue_load_fa()
 {
     wp_enqueue_style('load-fa', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
 }
 
-//Регистрация стилей и скриптов
+//Регистрация стилей и скриптов для определенных страниц определенные стили и скрипты, иначе все посыпется
 add_action('wp_enqueue_scripts', 'script_for_service');
 function script_for_service()
 {
@@ -83,8 +83,7 @@ function theme_name_scripts()
 
 }
 
-//Вывод кастомных полей для header-home.php и footer-home.php в админку acfpro
-
+//Вывод кастомных полей для header-home.php и footer-home.php в админку через acfpro
 if (function_exists('acf_add_options_page')) {
 
     acf_add_options_page(array(
@@ -108,6 +107,7 @@ if (function_exists('acf_add_options_page')) {
     ));
 }
 
+//Регистрация меню
 register_nav_menus(array(
     'menu' => 'Основное меню'
 ));

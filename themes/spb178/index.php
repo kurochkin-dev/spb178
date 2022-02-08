@@ -57,10 +57,13 @@ get_header();
 	<div class="main-index main">
 		<!-- Logo part -->
 		<div id="main-logo">
-			<picture>
-				<source srcset="<?php the_field('logo_main_webp'); ?>" type="image/webp">
-				<img class="index__logo" src="<?php the_field('logo_main_png'); ?>" alt="ООО СтройСнаб">
-			</picture>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<picture>
+					<source srcset="<?php the_field('logo_main_webp'); ?>" type="image/webp">
+					<img class="index__logo" src="<?php the_field('logo_main_png'); ?>" alt="ООО СтройСнаб">
+				</picture>
+			</a>
+
 		</div>
 
 		<!-- Offers part -->

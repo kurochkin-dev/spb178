@@ -12,10 +12,9 @@
 	<meta http-equiv="Cache-Control" content="no-cache"/>
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 	<meta name="format-detection" content="telephone=no">
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=ac441832-f13a-4b1d-9214-122da571f681&amp;lang=ru_RU"
-			type="text/javascript"></script>
-
-	<!-- <?php echo $prefix; ?> -->
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
 
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="152x152" href="/wp-content/themes/spb178/icons/apple-touch-icon.png">
@@ -23,13 +22,13 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/themes/spb178/icons/favicon-16x16.png">
 	<link rel="manifest" href="/wp-content/themes/spb178/site.webmanifest">
 	<link rel="mask-icon" href="/wp-content/themes/spb178/icons/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-	<meta name="theme-color" content="#ffffff">
 
 	<title><?php wp_title(); ?></title>
 
 	<!-- Yandex.Metrika counter -->
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=ac441832-f13a-4b1d-9214-122da571f681&amp;lang=ru_RU"
+			type="text/javascript"></script>
+
 	<script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
             m[i] = m[i] || function () {
@@ -86,7 +85,7 @@
 	</div>
 	<div id="cont-logo" class="cont-logo">
 		<div id="logo" class="logo__wrap">
-			<a href="/">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<picture class="logo">
 					<source
 						srcset="<?php the_field('header_logo_webp', 'option'); ?>"
